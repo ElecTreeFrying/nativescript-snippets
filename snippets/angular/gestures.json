@@ -1,0 +1,42 @@
+{
+  "Gesture - tap": {
+    "prefix": "ns-tap",
+    "body": "(tap)=\"$0\"",
+    "description": "Action: Briefly touch the screen.\n\nSource: https://docs.nativescript.org/guide/gestures"
+  },
+  "Gesture - doubleTap": {
+    "prefix": "ns-doubleTap",
+    "body": "(doubleTap)=\"$0\"",
+    "description": "Action: Two taps in quick succession.\n\nSource: https://docs.nativescript.org/guide/gestures"
+  },
+  "Gesture - longPress": {
+    "prefix": "ns-longPress",
+    "body": "(longPress)=\"$0\"",
+    "description": "Action: Press your finger against the screen for a few moments.\n\nSource: https://docs.nativescript.org/guide/gestures"
+  },
+  "Gesture - swipe": {
+    "prefix": "ns-swipe",
+    "body": "(swipe)=\"$0\"",
+    "description": "Action: Swiftly slide your finger across the screen.\n\nSource: https://docs.nativescript.org/guide/gestures"
+  },
+  "Gesture - pan": {
+    "prefix": "ns-pan",
+    "body": "(pan)=\"$0\"",
+    "description": "Action: Press your finger down and immediately start moving it around.\n\nSource: https://docs.nativescript.org/guide/gestures"
+  },
+  "Gesture - pinch": {
+    "prefix": "ns-pinch",
+    "body": "(pinch)=\"$0\"",
+    "description": "Action: Touch the screen using two fingers, then move them toward or away from each other.\n\nSource: https://docs.nativescript.org/guide/gestures"
+  },
+  "Gesture - rotation": {
+    "prefix": "ns-rotation",
+    "body": "(rotation)=\"$0\"",
+    "description": "Action: Touch the screen using two fingers, then rotate them.\n\nSource: https://docs.nativescript.org/guide/gestures"
+  },
+  "Gesture - touch": {
+    "prefix": "ns-touch",
+    "body": "(touch)=\"$0\"",
+    "description": "Action: A finger action was performed.\n\nSource: https://docs.nativescript.org/guide/gestures"
+  }
+}
