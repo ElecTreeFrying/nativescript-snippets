@@ -32,35 +32,36 @@
 
 ### Changes
 
-- updated README
+- Updated the README.
 
 ## v0.1.3 (2020-3-21)
 
 ### Changes
 
-- updated README
+- Updated the README.
 
 ## v0.1.2 (2020-3-18)
 
 ### Added
 
-- more demos and exampls in reference .md
-- updated README
-- removed snippet in keywords and added html
+- More demos and examples in `reference.md`.
+- HTML language scoping; dropped the redundant `snippet` marketplace keyword.
 
 ### Changes
 
-- remove typos in CHANGELOG
+- Updated the README.
+- Corrected typos in the changelog.
 
 ## v0.1.1 (2020-3-18)
 
 ### Fixes
 
-- vsce publish error: icon not found
-- fixed some CHANGELOG.md typos
-- version name
+- Fixed a `vsce publish` failure caused by a missing icon.
+- Corrected the version metadata in `package.json`.
+- Corrected typos in the changelog.
 
 ## v0.1.0 (2020-3-17)
 
-- Initial release
-- version name
+### Added
+
+- Initial public release — NativeScript UI snippets for Angular (`html`) in VS Code.
