@@ -1,4 +1,25 @@
 .vscode/**
 .vscode-test/**
 .gitignore
-vsc-extension-quickstart.md
+
+# dev-only: keep the published .vsix lean (ship package.json + snippets/ + README/CHANGELOG/LICENSE + images/icon.png)
+node_modules/**
+tools/**
+qa/**
+.gitattributes
+package-lock.json
+reference.md
+SPEC.md
+SUPPORT.md
+CLAUDE.md
+# per-directory dev docs beside the shipped snippet JSON (the bare CLAUDE.md above only matches root)
+snippets/**/CLAUDE.md
+snippets/**/README.md
+.claude/**
+
+# Keep demo media out of the .vsix: README uses relative image paths that vsce auto-rewrites to GitHub raw URLs at publish, so bundling these large gifs is unnecessary; .mov are convert-to-gif masters
+images/playback.gif
+images/demo-variants.gif
+images/demo-flavors.gif
+images/demo-variants.mov
+images/demo-flavors.mov
