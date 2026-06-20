@@ -1,0 +1,18 @@
+<!-- Core flavor (language id: xml) — NativeScript Page markup.
+     This is the primary scratch file for checklists/core.md.
+     Put the cursor on a blank "type here" line below and type an ns-* prefix
+     (e.g. ns-button, ns-button-prop, ns-button-comp, ns-stack-layout-snippet-1,
+     ns-tap, ns-icon-done), then accept the completion and verify the inserted
+     text + tab stops. Press Cmd+Z (mac) / Ctrl+Z to reset after each case. -->
+<Page xmlns="http://schemas.nativescript.org/tns.xsd">
+  <ActionBar title="Core QA">
+
+    <!-- type ActionBar children here (ns-action-item, ns-icon-*, ns-navigation-button) -->
+
+  </ActionBar>
+  <StackLayout>
+
+    <!-- type here -->
+
+  </StackLayout>
+</Page>

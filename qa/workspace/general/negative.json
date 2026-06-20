@@ -1,0 +1,5 @@
+{
+  "_comment": "NEGATIVE fixture (language id: json). No ns-* prefix is contributed to JSON.",
+  "_instruction": "Type ns-button on the blank line below the cursor — no snippet from this extension should appear.",
+  "scratch": ""
+}
