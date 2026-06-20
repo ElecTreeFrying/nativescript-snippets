@@ -1,0 +1,23 @@
+<!-- NativeScript Core template (language id: xml).
+     Try snippets in context: type ns-action-bar, ns-grid-layout-snippet-1,
+     ns-list-view-comp, ns-button-prop, ns-tap, ns-icon-add … -->
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+  <ActionBar title="{{ title }}">
+    <ActionItem tap="onTap" ios.systemIcon="2" android.position="actionBar" />
+    <!-- ns-action-item / ns-icon-* go here -->
+  </ActionBar>
+
+  <GridLayout rows="auto, *" columns="*">
+    <Button row="0" text="Refresh" tap="onTap" />
+
+    <StackLayout row="1" padding="12">
+
+      <!-- Default -->
+
+      <!-- Prop -->
+
+      <!-- Comp -->
+
+    </StackLayout>
+  </GridLayout>
+</Page>
