@@ -7,7 +7,7 @@
     },
     "displayName": "NativeScript Snippets — Angular, Core, Vue, React, Svelte",
     "description": "NativeScript UI snippets for every flavor — Angular (HTML), Core (XML), Vue, React, and Svelte. Component, layout, and gesture snippets generated from @nativescript/core types, so they stay accurate.",
-    "version": "0.1.4",
+    "version": "1.0.0",
     "icon": "images/icon.png",
     "categories": [
         "Snippets",
@@ -103,27 +103,90 @@
     },
     "contributes": {
         "snippets": [
-            { "language": "html", "path": "./snippets/angular/components.json" },
-            { "language": "html", "path": "./snippets/angular/layouts.json" },
-            { "language": "html", "path": "./snippets/angular/gestures.json" },
-            { "language": "html", "path": "./snippets/angular/settings-icon.json" },
-            { "language": "xml", "path": "./snippets/core/components.json" },
-            { "language": "xml", "path": "./snippets/core/layouts.json" },
-            { "language": "xml", "path": "./snippets/core/gestures.json" },
-            { "language": "xml", "path": "./snippets/core/settings-icon.json" },
-            { "language": "vue", "path": "./snippets/vue/components.json" },
-            { "language": "vue", "path": "./snippets/vue/layouts.json" },
-            { "language": "vue", "path": "./snippets/vue/gestures.json" },
-            { "language": "typescriptreact", "path": "./snippets/react/components.json" },
-            { "language": "typescriptreact", "path": "./snippets/react/layouts.json" },
-            { "language": "typescriptreact", "path": "./snippets/react/gestures.json" },
-            { "language": "javascriptreact", "path": "./snippets/react/components.json" },
-            { "language": "javascriptreact", "path": "./snippets/react/layouts.json" },
-            { "language": "javascriptreact", "path": "./snippets/react/gestures.json" },
-            { "language": "svelte", "path": "./snippets/svelte/components.json" },
-            { "language": "svelte", "path": "./snippets/svelte/layouts.json" },
-            { "language": "svelte", "path": "./snippets/svelte/gestures.json" },
-            { "language": "svelte-start-tag", "path": "./snippets/svelte/gestures.json" }
+            {
+                "language": "html",
+                "path": "./snippets/angular/components.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/angular/layouts.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/angular/gestures.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/angular/settings-icon.json"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/core/components.json"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/core/layouts.json"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/core/gestures.json"
+            },
+            {
+                "language": "xml",
+                "path": "./snippets/core/settings-icon.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/vue/components.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/vue/layouts.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/vue/gestures.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/react/components.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/react/layouts.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/react/gestures.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/react/components.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/react/layouts.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/react/gestures.json"
+            },
+            {
+                "language": "svelte",
+                "path": "./snippets/svelte/components.json"
+            },
+            {
+                "language": "svelte",
+                "path": "./snippets/svelte/layouts.json"
+            },
+            {
+                "language": "svelte",
+                "path": "./snippets/svelte/gestures.json"
+            },
+            {
+                "language": "svelte-start-tag",
+                "path": "./snippets/svelte/gestures.json"
+            }
         ]
     }
 }
