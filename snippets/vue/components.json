@@ -1,0 +1,482 @@
+{
+  "ActionBar (default)": {
+    "prefix": "ns-action-bar",
+    "body": "<ActionBar>$0</ActionBar>",
+    "description": "Provides an abstraction over the ActionBar (android) and NavigationBar (iOS).\n\nSource: https://docs.nativescript.org/api/class/ActionBar"
+  },
+  "ActionBar (properties)": {
+    "prefix": "ns-action-bar-prop",
+    "body": "<ActionBar\n\tactionItems=\"${1:ActionItems}\"\n\tandroidContentInset=\"${2:(auto|number)}\"\n\tandroidContentInsetLeft=\"${3:(auto|number)}\"\n\tandroidContentInsetRight=\"${4:(auto|number)}\"\n\tflat=\"${5:boolean}\"\n\tiosIconRenderingMode=\"${6:(automatic|alwaysOriginal|alwaysTemplate)}\"\n\tiosLargeTitle=\"${7:boolean}\"\n\tiosShadow=\"${8:boolean}\"\n\tnavigationButton=\"${9:NavigationButton}\"\n\ttitle=\"${10:string}\"\n\ttitleView=\"${11:View}\">$0</ActionBar>",
+    "description": "Provides an abstraction over the ActionBar (android) and NavigationBar (iOS).\n\nSource: https://docs.nativescript.org/api/class/ActionBar"
+  },
+  "ActionBar (complete)": {
+    "prefix": "ns-action-bar-comp",
+    "body": "<ActionBar\n\tactionItems=\"${1:ActionItems}\"\n\tandroidContentInset=\"${2:(auto|number)}\"\n\tandroidContentInsetLeft=\"${3:(auto|number)}\"\n\tandroidContentInsetRight=\"${4:(auto|number)}\"\n\tflat=\"${5:boolean}\"\n\tiosIconRenderingMode=\"${6:(automatic|alwaysOriginal|alwaysTemplate)}\"\n\tiosLargeTitle=\"${7:boolean}\"\n\tiosShadow=\"${8:boolean}\"\n\tnavigationButton=\"${9:NavigationButton}\"\n\ttitle=\"${10:string}\"\n\ttitleView=\"${11:View}\">$0</ActionBar>\n<!--\nProperties\n  actionItems (ActionItems) — Gets the collection of action items.\n  androidContentInset (LengthType)\n  androidContentInsetLeft (LengthType)\n  androidContentInsetRight (LengthType)\n  flat (boolean) — Removes the shadow/border at the bottom of the ActionBar and remove...\n  iosIconRenderingMode ('automatic' | 'alwaysOriginal' | 'alwaysTemplate') — Gets or set the UIImageRenderingMode of the action bar icons in iOS\n  iosLargeTitle (boolean)\n  iosShadow (boolean)\n  navigationButton (NavigationButton) — Gets or sets the navigation button (a.k.a\n  title (string) — Gets or sets the action bar title.\n  titleView (View) — Gets or sets the title view\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Provides an abstraction over the ActionBar (android) and NavigationBar (iOS).\n\nSource: https://docs.nativescript.org/api/class/ActionBar"
+  },
+  "ActionItem (default)": {
+    "prefix": "ns-action-item",
+    "body": "<ActionItem>$0</ActionItem>",
+    "description": "Represents an action item in the action bar.\n\nSource: https://docs.nativescript.org/api/class/ActionItem"
+  },
+  "ActionItem (properties)": {
+    "prefix": "ns-action-item-prop",
+    "body": "<ActionItem\n\tactionView=\"${1:View}\"\n\ticon=\"${2:string}\"\n\ttext=\"${3:string}\"\n\tvisibility=\"${4:string}\">$0</ActionItem>",
+    "description": "Represents an action item in the action bar.\n\nSource: https://docs.nativescript.org/api/class/ActionItem"
+  },
+  "ActionItem (complete)": {
+    "prefix": "ns-action-item-comp",
+    "body": "<ActionItem\n\tactionView=\"${1:View}\"\n\ticon=\"${2:string}\"\n\ttext=\"${3:string}\"\n\tvisibility=\"${4:string}\"\n\t@tap=\"${5}\">$0</ActionItem>\n<!--\nProperties\n  actionView (View) — Gets or sets the custom action view of the action item.\n  icon (string) — Gets or sets the icon of the action item.\n  text (string) — Gets or sets the text of the action item.\n  visibility (string) — Gets or sets the visibility of the action item.\n\nEvents\n  tap\n\n+ 23 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 5 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents an action item in the action bar.\n\nSource: https://docs.nativescript.org/api/class/ActionItem"
+  },
+  "ActivityIndicator (default)": {
+    "prefix": "ns-activity-indicator",
+    "body": "<ActivityIndicator>$0</ActivityIndicator>",
+    "description": "Represents a UI widget which displays a progress indicator hinting the user for some background operation running.\n\nSource: https://docs.nativescript.org/api/class/ActivityIndicator"
+  },
+  "ActivityIndicator (properties)": {
+    "prefix": "ns-activity-indicator-prop",
+    "body": "<ActivityIndicator\n\tbusy=\"${1:boolean}\"\n\tiosIndicatorViewStyle=\"${2:(medium|large)}\">$0</ActivityIndicator>",
+    "description": "Represents a UI widget which displays a progress indicator hinting the user for some background operation running.\n\nSource: https://docs.nativescript.org/api/class/ActivityIndicator"
+  },
+  "ActivityIndicator (complete)": {
+    "prefix": "ns-activity-indicator-comp",
+    "body": "<ActivityIndicator\n\tbusy=\"${1:boolean}\"\n\tiosIndicatorViewStyle=\"${2:(medium|large)}\">$0</ActivityIndicator>\n<!--\nProperties\n  busy (boolean) — Gets or sets a value indicating whether the widget is currently dis...\n  iosIndicatorViewStyle (IOSIndicatorViewStyle)\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a UI widget which displays a progress indicator hinting the user for some background operation running.\n\nSource: https://docs.nativescript.org/api/class/ActivityIndicator"
+  },
+  "Button (default)": {
+    "prefix": "ns-button",
+    "body": "<Button>$0</Button>",
+    "description": "Represents a standard Button widget.\n\nSource: https://docs.nativescript.org/api/class/Button"
+  },
+  "Button (properties)": {
+    "prefix": "ns-button-prop",
+    "body": "<Button\n\tformattedText=\"${1:FormattedString}\"\n\tiosTextAnimation=\"${2:boolean}\"\n\tletterSpacing=\"${3:number}\"\n\tlineHeight=\"${4:number}\"\n\tmaxLines=\"${5:number}\"\n\tpadding=\"${6:number}\"\n\ttext=\"${7:string}\"\n\ttextAlignment=\"${8:(center|left|right|justify)}\"\n\ttextDecoration=\"${9:(none|underline|line-through|underline line-through)}\"\n\ttextOverflow=\"${10:(clip|ellipsis)}\"\n\ttextShadow=\"${11:0 2 4 #00000088}\"\n\ttextStroke=\"${12:1 #000000}\"\n\ttextTransform=\"${13:(none|capitalize|uppercase|lowercase)}\"\n\ttextWrap=\"${14:boolean}\"\n\twhiteSpace=\"${15:(nowrap|wrap|normal)}\">$0</Button>",
+    "description": "Represents a standard Button widget.\n\nSource: https://docs.nativescript.org/api/class/Button"
+  },
+  "Button (complete)": {
+    "prefix": "ns-button-comp",
+    "body": "<Button\n\tformattedText=\"${1:FormattedString}\"\n\tiosTextAnimation=\"${2:boolean}\"\n\tletterSpacing=\"${3:number}\"\n\tlineHeight=\"${4:number}\"\n\tmaxLines=\"${5:number}\"\n\tpadding=\"${6:number}\"\n\ttext=\"${7:string}\"\n\ttextAlignment=\"${8:(center|left|right|justify)}\"\n\ttextDecoration=\"${9:(none|underline|line-through|underline line-through)}\"\n\ttextOverflow=\"${10:(clip|ellipsis)}\"\n\ttextShadow=\"${11:0 2 4 #00000088}\"\n\ttextStroke=\"${12:1 #000000}\"\n\ttextTransform=\"${13:(none|capitalize|uppercase|lowercase)}\"\n\ttextWrap=\"${14:boolean}\"\n\twhiteSpace=\"${15:(nowrap|wrap|normal)}\"\n\t@tap=\"${16}\">$0</Button>\n<!--\nProperties\n  formattedText (FormattedString) — Gets or sets a formatted string.\n  iosTextAnimation (boolean | 'inherit') — Specify wether the native text should be applied with or without an...\n  letterSpacing (number) — Gets or sets letterSpace style property.\n  lineHeight (number) — Gets or sets lineHeight style property.\n  maxLines (number) — Gets or sets white space style property.\n  padding (string | number | LengthDipUnit | LengthPxUnit) — Gets or sets padding style property.\n  text (string) — Gets or sets the text.\n  textAlignment (TextAlignmentType) — Gets or sets text-alignment style property.\n  textDecoration (TextDecorationType) — Gets or sets text decorations style property.\n  textOverflow (TextOverflowType) — Gets or sets text-overflow style property.\n  textShadow (ShadowCSSValues) — Gets or sets text shadow style property.\n  textStroke (StrokeCSSValues) — Gets or sets text stroke style property.\n  textTransform (TextTransformType) — Gets or sets text transform style property.\n  textWrap (boolean) — Gets or sets whether the Button wraps text or not.\n  whiteSpace (WhiteSpaceType) — Gets or sets white space style property.\n\nEvents\n  tap\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a standard Button widget.\n\nSource: https://docs.nativescript.org/api/class/Button"
+  },
+  "ContentView (default)": {
+    "prefix": "ns-content-view",
+    "body": "<ContentView>$0</ContentView>",
+    "description": "NativeScript ContentView.\n\nSource: https://docs.nativescript.org/api/class/ContentView"
+  },
+  "ContentView (properties)": {
+    "prefix": "ns-content-view-prop",
+    "body": "<ContentView\n\tcontent=\"${1:View}\">$0</ContentView>",
+    "description": "NativeScript ContentView.\n\nSource: https://docs.nativescript.org/api/class/ContentView"
+  },
+  "ContentView (complete)": {
+    "prefix": "ns-content-view-comp",
+    "body": "<ContentView\n\tcontent=\"${1:View}\">$0</ContentView>\n<!--\nProperties\n  content (View) — Gets or sets the single child of the view.\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "NativeScript ContentView.\n\nSource: https://docs.nativescript.org/api/class/ContentView"
+  },
+  "DatePicker (default)": {
+    "prefix": "ns-date-picker",
+    "body": "<DatePicker>$0</DatePicker>",
+    "description": "Represents an date picker.\n\nSource: https://docs.nativescript.org/api/class/DatePicker"
+  },
+  "DatePicker (properties)": {
+    "prefix": "ns-date-picker-prop",
+    "body": "<DatePicker\n\tdate=\"${1:Date}\"\n\tday=\"${2:number}\"\n\thour=\"${3:number}\"\n\tiosPreferredDatePickerStyle=\"${4:number}\"\n\tmaxDate=\"${5:Date}\"\n\tminDate=\"${6:Date}\"\n\tminute=\"${7:number}\"\n\tmonth=\"${8:number}\"\n\tsecond=\"${9:number}\"\n\tshowTime=\"${10:boolean}\"\n\tyear=\"${11:number}\">$0</DatePicker>",
+    "description": "Represents an date picker.\n\nSource: https://docs.nativescript.org/api/class/DatePicker"
+  },
+  "DatePicker (complete)": {
+    "prefix": "ns-date-picker-comp",
+    "body": "<DatePicker\n\tdate=\"${1:Date}\"\n\tday=\"${2:number}\"\n\thour=\"${3:number}\"\n\tiosPreferredDatePickerStyle=\"${4:number}\"\n\tmaxDate=\"${5:Date}\"\n\tminDate=\"${6:Date}\"\n\tminute=\"${7:number}\"\n\tmonth=\"${8:number}\"\n\tsecond=\"${9:number}\"\n\tshowTime=\"${10:boolean}\"\n\tyear=\"${11:number}\"\n\t@dateChange=\"${12}\">$0</DatePicker>\n<!--\nProperties\n  date (Date) — Gets or sets the entire date.\n  day (number) — Gets or sets the day\n  hour (number)\n  iosPreferredDatePickerStyle (number) — Gets or set the UIDatePickerStyle of the date picker in iOS 13.4+\n  maxDate (Date) — Gets or sets the max date.\n  minDate (Date) — Gets or sets the min date.\n  minute (number)\n  month (number) — Gets or sets the month\n  second (number)\n  showTime (boolean) — Gets or sets whether the time should be shown.\n  year (number) — Gets or sets the year.\n\nEvents\n  dateChange\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents an date picker.\n\nSource: https://docs.nativescript.org/api/class/DatePicker"
+  },
+  "FormattedString (default)": {
+    "prefix": "ns-formatted-string",
+    "body": "<FormattedString>$0</FormattedString>",
+    "description": "A class used to create a formatted (rich text) string.\n\nSource: https://docs.nativescript.org/api/class/FormattedString"
+  },
+  "FormattedString (properties)": {
+    "prefix": "ns-formatted-string-prop",
+    "body": "<FormattedString\n\tbackgroundColor=\"${1:Color}\"\n\tcolor=\"${2:Color}\"\n\tfontFamily=\"${3:string}\"\n\tfontSize=\"${4:number}\"\n\tfontStyle=\"${5:(normal|italic)}\"\n\tfontVariationSettings=\"${6:value}\"\n\tfontWeight=\"${7:(normal|100|200|300|400|500|600|bold|700|800|900|number)}\"\n\tiosAccessibilityAdjustsFontSize=\"${8:boolean}\"\n\tiosAccessibilityMaxFontScale=\"${9:number}\"\n\tiosAccessibilityMinFontScale=\"${10:number}\"\n\ttextDecoration=\"${11:(none|underline|line-through|underline line-through)}\">$0</FormattedString>",
+    "description": "A class used to create a formatted (rich text) string.\n\nSource: https://docs.nativescript.org/api/class/FormattedString"
+  },
+  "FormattedString (complete)": {
+    "prefix": "ns-formatted-string-comp",
+    "body": "<FormattedString\n\tbackgroundColor=\"${1:Color}\"\n\tcolor=\"${2:Color}\"\n\tfontFamily=\"${3:string}\"\n\tfontSize=\"${4:number}\"\n\tfontStyle=\"${5:(normal|italic)}\"\n\tfontVariationSettings=\"${6:value}\"\n\tfontWeight=\"${7:(normal|100|200|300|400|500|600|bold|700|800|900|number)}\"\n\tiosAccessibilityAdjustsFontSize=\"${8:boolean}\"\n\tiosAccessibilityMaxFontScale=\"${9:number}\"\n\tiosAccessibilityMinFontScale=\"${10:number}\"\n\ttextDecoration=\"${11:(none|underline|line-through|underline line-through)}\">$0</FormattedString>\n<!--\nProperties\n  backgroundColor (Color) — Gets or sets the font background color which will be used for all s...\n  color (Color) — Gets or sets the font foreground color which will be used for all s...\n  fontFamily (string) — Gets or sets the font family which will be used for all spans that ...\n  fontSize (number) — Gets or sets the font size which will be used for all spans that do...\n  fontStyle (FontStyleType) — Gets or sets the font style which will be used for all spans that d...\n  fontVariationSettings ({}) — Gets or sets the font variation settings which will be used for all...\n  fontWeight (FontWeightType) — Gets or sets the font weight which will be used for all spans that ...\n  iosAccessibilityAdjustsFontSize (boolean) — Defines whether accessibility font scale should affect font size.\n  iosAccessibilityMaxFontScale (number) — Gets or sets the maximum accessibility font scale.\n  iosAccessibilityMinFontScale (number) — Gets or sets the minimum accessibility font scale.\n  textDecoration (TextDecorationType) — Gets or sets text decorations which will be used for all spans that...\n\n+ 23 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 5 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "A class used to create a formatted (rich text) string.\n\nSource: https://docs.nativescript.org/api/class/FormattedString"
+  },
+  "Frame (default)": {
+    "prefix": "ns-frame",
+    "body": "<Frame>$0</Frame>",
+    "description": "Represents the logical View unit that is responsible for navigation within an application. Nested frames are supported, enabling hierarchical navigation scenarios.\n\nSource: https://docs.nativescript.org/api/class/Frame"
+  },
+  "Frame (properties)": {
+    "prefix": "ns-frame-prop",
+    "body": "<Frame\n\tactionBarVisibility=\"${1:(auto|never|always)}\"\n\tdefaultPage=\"${2:string}\"\n\tiosNavigationBarClass=\"${3:any}\"\n\tiosToolbarClass=\"${4:any}\">$0</Frame>",
+    "description": "Represents the logical View unit that is responsible for navigation within an application. Nested frames are supported, enabling hierarchical navigation scenarios.\n\nSource: https://docs.nativescript.org/api/class/Frame"
+  },
+  "Frame (complete)": {
+    "prefix": "ns-frame-comp",
+    "body": "<Frame\n\tactionBarVisibility=\"${1:(auto|never|always)}\"\n\tdefaultPage=\"${2:string}\"\n\tiosNavigationBarClass=\"${3:any}\"\n\tiosToolbarClass=\"${4:any}\"\n\t@navigatedTo=\"${5}\"\n\t@navigatingTo=\"${6}\">$0</Frame>\n<!--\nProperties\n  actionBarVisibility ('auto' | 'never' | 'always') — Used to control the visibility the Navigation Bar in iOS and the Ac...\n  defaultPage (string)\n  iosNavigationBarClass (any) — Specify a custom UINavigationBar class (iOS only)\n  iosToolbarClass (any) — Specify a custom UIToolbar class (iOS only)\n\nEvents\n  navigatedTo\n  navigatingTo\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents the logical View unit that is responsible for navigation within an application. Nested frames are supported, enabling hierarchical navigation scenarios.\n\nSource: https://docs.nativescript.org/api/class/Frame"
+  },
+  "HtmlView (default)": {
+    "prefix": "ns-html-view",
+    "body": "<HtmlView>$0</HtmlView>",
+    "description": "Represents a view with html content. Use this component instead WebView when you want to show just static HTML content. [iOS support](https://developer.apple.com/documentation/foundation/nsattributedstring/1524613-initwithdata) [android support](http://developer.android.com/reference/android/text/Html.html)\n\nSource: https://docs.nativescript.org/api/class/HtmlView"
+  },
+  "HtmlView (properties)": {
+    "prefix": "ns-html-view-prop",
+    "body": "<HtmlView\n\thtml=\"${1:string}\"\n\tlinkColor=\"${2:Color}\"\n\tselectable=\"${3:boolean}\">$0</HtmlView>",
+    "description": "Represents a view with html content. Use this component instead WebView when you want to show just static HTML content. [iOS support](https://developer.apple.com/documentation/foundation/nsattributedstring/1524613-initwithdata) [android support](http://developer.android.com/reference/android/text/Html.html)\n\nSource: https://docs.nativescript.org/api/class/HtmlView"
+  },
+  "HtmlView (complete)": {
+    "prefix": "ns-html-view-comp",
+    "body": "<HtmlView\n\thtml=\"${1:string}\"\n\tlinkColor=\"${2:Color}\"\n\tselectable=\"${3:boolean}\">$0</HtmlView>\n<!--\nProperties\n  html (string) — Gets or sets html string for the HtmlView.\n  linkColor (Color) — Gets of sets color of links in the rendered HTML.\n  selectable (boolean) — Gets or sets a value indicating whether HtmlView is selectable.\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a view with html content. Use this component instead WebView when you want to show just static HTML content. [iOS support](https://developer.apple.com/documentation/foundation/nsattributedstring/1524613-initwithdata) [android support](http://developer.android.com/reference/android/text/Html.html)\n\nSource: https://docs.nativescript.org/api/class/HtmlView"
+  },
+  "Image (default)": {
+    "prefix": "ns-image",
+    "body": "<Image>$0</Image>",
+    "description": "Represents a class that provides functionality for loading and streching image(s).\n\nSource: https://docs.nativescript.org/api/class/Image"
+  },
+  "Image (properties)": {
+    "prefix": "ns-image-prop",
+    "body": "<Image\n\tdecodeHeight=\"${1:(auto|number)}\"\n\tdecodeWidth=\"${2:(auto|number)}\"\n\timageSource=\"${3:ImageSource}\"\n\tiosSymbolEffect=\"${4:appear}\"\n\tiosSymbolScale=\"${5:(default|small|medium|large)}\"\n\tloadMode=\"${6:(sync|async)}\"\n\tsrc=\"${7:string}\"\n\tstretch=\"${8:(none|aspectFill|aspectFit|fill)}\"\n\ttintColor=\"${9:Color}\">$0</Image>",
+    "description": "Represents a class that provides functionality for loading and streching image(s).\n\nSource: https://docs.nativescript.org/api/class/Image"
+  },
+  "Image (complete)": {
+    "prefix": "ns-image-comp",
+    "body": "<Image\n\tdecodeHeight=\"${1:(auto|number)}\"\n\tdecodeWidth=\"${2:(auto|number)}\"\n\timageSource=\"${3:ImageSource}\"\n\tiosSymbolEffect=\"${4:appear}\"\n\tiosSymbolScale=\"${5:(default|small|medium|large)}\"\n\tloadMode=\"${6:(sync|async)}\"\n\tsrc=\"${7:string}\"\n\tstretch=\"${8:(none|aspectFill|aspectFit|fill)}\"\n\ttintColor=\"${9:Color}\"\n\t@isLoadingChange=\"${10}\">$0</Image>\n<!--\nProperties\n  decodeHeight (LengthType) — Gets or sets the desired decode height of the image\n  decodeWidth (LengthType) — Gets or sets the desired decode width of the image\n  imageSource (ImageSource) — Gets or sets the image source of the image.\n  iosSymbolEffect (ImageSymbolEffect | ImageSymbolEffects) — Get or set the symbol effect used to animate the SF symbol image Sy...\n  iosSymbolScale (iosSymbolScaleType) — Get or set the SF Symbol scale to use.\n  loadMode ('sync' | 'async') — Gets or sets the loading strategy for images on the local file syst...\n  src (string | ImageSource | ImageAsset) — Gets or sets the source of the Image\n  stretch (ImageStretchType) — Gets or sets the image stretch mode.\n  tintColor (Color) — A color used to tint template images.\n\nEvents\n  isLoadingChange\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a class that provides functionality for loading and streching image(s).\n\nSource: https://docs.nativescript.org/api/class/Image"
+  },
+  "Label (default)": {
+    "prefix": "ns-label",
+    "body": "<Label>$0</Label>",
+    "description": "Represents a text label.\n\nSource: https://docs.nativescript.org/api/class/Label"
+  },
+  "Label (properties)": {
+    "prefix": "ns-label-prop",
+    "body": "<Label\n\tformattedText=\"${1:FormattedString}\"\n\tiosTextAnimation=\"${2:boolean}\"\n\tletterSpacing=\"${3:number}\"\n\tlineHeight=\"${4:number}\"\n\tmaxLines=\"${5:number}\"\n\tpadding=\"${6:number}\"\n\ttext=\"${7:string}\"\n\ttextAlignment=\"${8:(center|left|right|justify)}\"\n\ttextDecoration=\"${9:(none|underline|line-through|underline line-through)}\"\n\ttextOverflow=\"${10:(clip|ellipsis)}\"\n\ttextShadow=\"${11:0 2 4 #00000088}\"\n\ttextStroke=\"${12:1 #000000}\"\n\ttextTransform=\"${13:(none|capitalize|uppercase|lowercase)}\"\n\ttextWrap=\"${14:boolean}\"\n\twhiteSpace=\"${15:(nowrap|wrap|normal)}\">$0</Label>",
+    "description": "Represents a text label.\n\nSource: https://docs.nativescript.org/api/class/Label"
+  },
+  "Label (complete)": {
+    "prefix": "ns-label-comp",
+    "body": "<Label\n\tformattedText=\"${1:FormattedString}\"\n\tiosTextAnimation=\"${2:boolean}\"\n\tletterSpacing=\"${3:number}\"\n\tlineHeight=\"${4:number}\"\n\tmaxLines=\"${5:number}\"\n\tpadding=\"${6:number}\"\n\ttext=\"${7:string}\"\n\ttextAlignment=\"${8:(center|left|right|justify)}\"\n\ttextDecoration=\"${9:(none|underline|line-through|underline line-through)}\"\n\ttextOverflow=\"${10:(clip|ellipsis)}\"\n\ttextShadow=\"${11:0 2 4 #00000088}\"\n\ttextStroke=\"${12:1 #000000}\"\n\ttextTransform=\"${13:(none|capitalize|uppercase|lowercase)}\"\n\ttextWrap=\"${14:boolean}\"\n\twhiteSpace=\"${15:(nowrap|wrap|normal)}\">$0</Label>\n<!--\nProperties\n  formattedText (FormattedString) — Gets or sets a formatted string.\n  iosTextAnimation (boolean | 'inherit') — Specify wether the native text should be applied with or without an...\n  letterSpacing (number) — Gets or sets letterSpace style property.\n  lineHeight (number) — Gets or sets lineHeight style property.\n  maxLines (number) — Gets or sets white space style property.\n  padding (string | number | LengthDipUnit | LengthPxUnit) — Gets or sets padding style property.\n  text (string) — Gets or sets the text.\n  textAlignment (TextAlignmentType) — Gets or sets text-alignment style property.\n  textDecoration (TextDecorationType) — Gets or sets text decorations style property.\n  textOverflow (TextOverflowType) — Gets or sets text-overflow style property.\n  textShadow (ShadowCSSValues) — Gets or sets text shadow style property.\n  textStroke (StrokeCSSValues) — Gets or sets text stroke style property.\n  textTransform (TextTransformType) — Gets or sets text transform style property.\n  textWrap (boolean) — Gets or sets whether the Label wraps text or not.\n  whiteSpace (WhiteSpaceType) — Gets or sets white space style property.\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a text label.\n\nSource: https://docs.nativescript.org/api/class/Label"
+  },
+  "ListPicker (default)": {
+    "prefix": "ns-list-picker",
+    "body": "<ListPicker>$0</ListPicker>",
+    "description": "Represents an list picker.\n\nSource: https://docs.nativescript.org/api/class/ListPicker"
+  },
+  "ListPicker (properties)": {
+    "prefix": "ns-list-picker-prop",
+    "body": "<ListPicker\n\titems=\"${1:value}\"\n\tselectedIndex=\"${2:number}\"\n\tselectedValue=\"${3:string}\"\n\ttextField=\"${4:string}\"\n\tvalueField=\"${5:string}\">$0</ListPicker>",
+    "description": "Represents an list picker.\n\nSource: https://docs.nativescript.org/api/class/ListPicker"
+  },
+  "ListPicker (complete)": {
+    "prefix": "ns-list-picker-comp",
+    "body": "<ListPicker\n\titems=\"${1:value}\"\n\tselectedIndex=\"${2:number}\"\n\tselectedValue=\"${3:string}\"\n\ttextField=\"${4:string}\"\n\tvalueField=\"${5:string}\"\n\t@selectedIndexChange=\"${6}\">$0</ListPicker>\n<!--\nProperties\n  items ({} | ItemsSource) — Gets or set the items collection of the ListPicker\n  selectedIndex (number) — Gets or sets the selected index.\n  selectedValue (string)\n  textField (string)\n  valueField (string)\n\nEvents\n  selectedIndexChange\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents an list picker.\n\nSource: https://docs.nativescript.org/api/class/ListPicker"
+  },
+  "ListView (default)": {
+    "prefix": "ns-list-view",
+    "body": "<ListView>$0</ListView>",
+    "description": "Represents a view that shows items in a vertically scrolling list.\n\nSource: https://docs.nativescript.org/api/class/ListView"
+  },
+  "ListView (properties)": {
+    "prefix": "ns-list-view-prop",
+    "body": "<ListView\n\tiosEstimatedRowHeight=\"${1:(auto|number)}\"\n\titemIdGenerator=\"${2:number}\"\n\titems=\"${3:value}\"\n\titemTemplate=\"${4:string}\"\n\titemTemplates=\"${5:string}\"\n\titemTemplateSelector=\"${6:string}\"\n\trowHeight=\"${7:(auto|number)}\"\n\tsearchAutoHide=\"${8:boolean}\"\n\tsectioned=\"${9:boolean}\"\n\tseparatorColor=\"${10:Color}\"\n\tshowSearch=\"${11:boolean}\"\n\tstickyHeader=\"${12:boolean}\"\n\tstickyHeaderHeight=\"${13:(auto|number)}\"\n\tstickyHeaderTemplate=\"${14:string}\"\n\tstickyHeaderTopPadding=\"${15:boolean}\">$0</ListView>",
+    "description": "Represents a view that shows items in a vertically scrolling list.\n\nSource: https://docs.nativescript.org/api/class/ListView"
+  },
+  "ListView (complete)": {
+    "prefix": "ns-list-view-comp",
+    "body": "<ListView\n\tiosEstimatedRowHeight=\"${1:(auto|number)}\"\n\titemIdGenerator=\"${2:number}\"\n\titems=\"${3:value}\"\n\titemTemplate=\"${4:string}\"\n\titemTemplates=\"${5:string}\"\n\titemTemplateSelector=\"${6:string}\"\n\trowHeight=\"${7:(auto|number)}\"\n\tsearchAutoHide=\"${8:boolean}\"\n\tsectioned=\"${9:boolean}\"\n\tseparatorColor=\"${10:Color}\"\n\tshowSearch=\"${11:boolean}\"\n\tstickyHeader=\"${12:boolean}\"\n\tstickyHeaderHeight=\"${13:(auto|number)}\"\n\tstickyHeaderTemplate=\"${14:string}\"\n\tstickyHeaderTopPadding=\"${15:boolean}\"\n\t@itemLoading=\"${16}\"\n\t@itemTap=\"${17}\"\n\t@loadMoreItems=\"${18}\"\n\t@searchChange=\"${19}\">$0</ListView>\n<!--\nProperties\n  iosEstimatedRowHeight (LengthType) — Gets or set the estimated height of rows in the ListView\n  itemIdGenerator ((item: any, index: number, items: any) => number) — Item id generator\n  items ({} | ItemsSource) — Gets or set the items collection of the ListView\n  itemTemplate (string | Template) — Gets or set the item template of the ListView.\n  itemTemplates (string | Array<KeyedTemplate>) — Gets or set the list of item templates for the item template selector\n  itemTemplateSelector (string | ((item: any, index: number, items: any) => string)) — A function that returns the appropriate ket template based on the d...\n  rowHeight (LengthType) — Gets or set row height of the ListView.\n  searchAutoHide (boolean) — Gets or sets whether the search bar should auto-hide when scrolling...\n  sectioned (boolean) — Gets or sets a value indicating whether the ListView should treat i...\n  separatorColor (Color) — Gets or set the items separator line color of the ListView.\n  showSearch (boolean) — Gets or sets whether search functionality is enabled\n  stickyHeader (boolean) — Gets or sets a value indicating whether the ListView should display...\n  stickyHeaderHeight (LengthType) — Gets or sets the height of sticky headers.\n  stickyHeaderTemplate (string | Template) — Gets or sets the template for sticky headers.\n  stickyHeaderTopPadding (boolean) — Gets or sets a value indicating whether the ListView should show de...\n\nEvents\n  itemLoading\n  itemTap\n  loadMoreItems\n  searchChange\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a view that shows items in a vertically scrolling list.\n\nSource: https://docs.nativescript.org/api/class/ListView"
+  },
+  "Page (default)": {
+    "prefix": "ns-page",
+    "body": "<Page>$0</Page>",
+    "description": "Represents a logical unit for navigation (inside Frame).\n\nSource: https://docs.nativescript.org/api/class/Page"
+  },
+  "Page (properties)": {
+    "prefix": "ns-page-prop",
+    "body": "<Page\n\taccessibilityAnnouncePageEnabled=\"${1:boolean}\"\n\tactionBarHidden=\"${2:boolean}\"\n\tandroidStatusBarBackground=\"${3:Color}\"\n\tbackgroundSpanUnderStatusBar=\"${4:boolean}\"\n\tcontent=\"${5:View}\"\n\tenableSwipeBackNavigation=\"${6:boolean}\"\n\tonAccessibilityPerformEscape=\"${7:value}\">$0</Page>",
+    "description": "Represents a logical unit for navigation (inside Frame).\n\nSource: https://docs.nativescript.org/api/class/Page"
+  },
+  "Page (complete)": {
+    "prefix": "ns-page-comp",
+    "body": "<Page\n\taccessibilityAnnouncePageEnabled=\"${1:boolean}\"\n\tactionBarHidden=\"${2:boolean}\"\n\tandroidStatusBarBackground=\"${3:Color}\"\n\tbackgroundSpanUnderStatusBar=\"${4:boolean}\"\n\tcontent=\"${5:View}\"\n\tenableSwipeBackNavigation=\"${6:boolean}\"\n\tonAccessibilityPerformEscape=\"${7:value}\"\n\t@navigatedFrom=\"${8}\"\n\t@navigatedTo=\"${9}\"\n\t@navigatingFrom=\"${10}\"\n\t@navigatingTo=\"${11}\">$0</Page>\n<!--\nProperties\n  accessibilityAnnouncePageEnabled (boolean) — Should page changed be announced to the screen reader.\n  actionBarHidden (boolean) — Used to hide the Navigation Bar in iOS and the Action Bar in Android.\n  androidStatusBarBackground (Color) — Gets or sets the color of the status bar in Android.\n  backgroundSpanUnderStatusBar (boolean) — Gets or sets whether page background spans under status bar.\n  content (View) — Gets or sets the single child of the view.\n  enableSwipeBackNavigation (boolean) — Used to control if swipe back navigation in iOS is enabled\n  onAccessibilityPerformEscape (() => boolean) — iOS Only Perform an action when user performans the \"escape\" gesture\n\nEvents\n  navigatedFrom\n  navigatedTo\n  navigatingFrom\n  navigatingTo\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a logical unit for navigation (inside Frame).\n\nSource: https://docs.nativescript.org/api/class/Page"
+  },
+  "Placeholder (default)": {
+    "prefix": "ns-placeholder",
+    "body": "<Placeholder>$0</Placeholder>",
+    "description": "Represents a Placeholder, which is used to add a native view to the visual tree.\n\nSource: https://docs.nativescript.org/api/class/Placeholder"
+  },
+  "Placeholder (properties)": {
+    "prefix": "ns-placeholder-prop",
+    "body": "<Placeholder>$0</Placeholder>",
+    "description": "Represents a Placeholder, which is used to add a native view to the visual tree.\n\nSource: https://docs.nativescript.org/api/class/Placeholder"
+  },
+  "Placeholder (complete)": {
+    "prefix": "ns-placeholder-comp",
+    "body": "<Placeholder\n\t@creatingView=\"${1}\">$0</Placeholder>\n<!--\nProperties\n\nEvents\n  creatingView\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a Placeholder, which is used to add a native view to the visual tree.\n\nSource: https://docs.nativescript.org/api/class/Placeholder"
+  },
+  "Progress (default)": {
+    "prefix": "ns-progress",
+    "body": "<Progress>$0</Progress>",
+    "description": "Represents a progress component.\n\nSource: https://docs.nativescript.org/api/class/Progress"
+  },
+  "Progress (properties)": {
+    "prefix": "ns-progress-prop",
+    "body": "<Progress\n\tmaxValue=\"${1:number}\"\n\tvalue=\"${2:number}\">$0</Progress>",
+    "description": "Represents a progress component.\n\nSource: https://docs.nativescript.org/api/class/Progress"
+  },
+  "Progress (complete)": {
+    "prefix": "ns-progress-comp",
+    "body": "<Progress\n\tmaxValue=\"${1:number}\"\n\tvalue=\"${2:number}\"\n\t@valueChange=\"${3}\">$0</Progress>\n<!--\nProperties\n  maxValue (number) — Gets or sets a progress max value.\n  value (number) — Gets or sets a progress current value.\n\nEvents\n  valueChange\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a progress component.\n\nSource: https://docs.nativescript.org/api/class/Progress"
+  },
+  "ScrollView (default)": {
+    "prefix": "ns-scroll-view",
+    "body": "<ScrollView>$0</ScrollView>",
+    "description": "Represents a scrollable area that can have content that is larger than its bounds.\n\nSource: https://docs.nativescript.org/api/class/ScrollView"
+  },
+  "ScrollView (properties)": {
+    "prefix": "ns-scroll-view-prop",
+    "body": "<ScrollView\n\tcontent=\"${1:View}\"\n\tisScrollEnabled=\"${2:boolean}\"\n\torientation=\"${3:(horizontal|vertical)}\"\n\tscrollBarIndicatorVisible=\"${4:boolean}\">$0</ScrollView>",
+    "description": "Represents a scrollable area that can have content that is larger than its bounds.\n\nSource: https://docs.nativescript.org/api/class/ScrollView"
+  },
+  "ScrollView (complete)": {
+    "prefix": "ns-scroll-view-comp",
+    "body": "<ScrollView\n\tcontent=\"${1:View}\"\n\tisScrollEnabled=\"${2:boolean}\"\n\torientation=\"${3:(horizontal|vertical)}\"\n\tscrollBarIndicatorVisible=\"${4:boolean}\"\n\t@scroll=\"${5}\">$0</ScrollView>\n<!--\nProperties\n  content (View) — Gets or sets the single child of the view.\n  isScrollEnabled (boolean) — Gets or sets a value indicating whether scroll is enabled.\n  orientation (OrientationType) — Gets or sets direction in which the content can be scrolled.\n  scrollBarIndicatorVisible (boolean) — Toggles scrollbar indicator visibility\n\nEvents\n  scroll\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a scrollable area that can have content that is larger than its bounds.\n\nSource: https://docs.nativescript.org/api/class/ScrollView"
+  },
+  "SearchBar (default)": {
+    "prefix": "ns-search-bar",
+    "body": "<SearchBar>$0</SearchBar>",
+    "description": "Represents a search bar component.\n\nSource: https://docs.nativescript.org/api/class/SearchBar"
+  },
+  "SearchBar (properties)": {
+    "prefix": "ns-search-bar-prop",
+    "body": "<SearchBar\n\tclearButtonColor=\"${1:string}\"\n\thint=\"${2:string}\"\n\ttext=\"${3:string}\"\n\ttextFieldBackgroundColor=\"${4:Color}\"\n\ttextFieldHintColor=\"${5:Color}\">$0</SearchBar>",
+    "description": "Represents a search bar component.\n\nSource: https://docs.nativescript.org/api/class/SearchBar"
+  },
+  "SearchBar (complete)": {
+    "prefix": "ns-search-bar-comp",
+    "body": "<SearchBar\n\tclearButtonColor=\"${1:string}\"\n\thint=\"${2:string}\"\n\ttext=\"${3:string}\"\n\ttextFieldBackgroundColor=\"${4:Color}\"\n\ttextFieldHintColor=\"${5:Color}\"\n\t@clear=\"${6}\"\n\t@submit=\"${7}\">$0</SearchBar>\n<!--\nProperties\n  clearButtonColor (string | Color) — Gets or sets the Clear Button color of the SearchBar component.\n  hint (string) — Gets or sets the text of the search bar text field hint/placeholder.\n  text (string) — Gets or sets a search bar text.\n  textFieldBackgroundColor (Color) — Gets or sets the TextField background color of the SearchBar compon...\n  textFieldHintColor (Color) — Gets or sets the TextField Hint color of the SearchBar component.\n\nEvents\n  clear\n  submit\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a search bar component.\n\nSource: https://docs.nativescript.org/api/class/SearchBar"
+  },
+  "SegmentedBar (default)": {
+    "prefix": "ns-segmented-bar",
+    "body": "<SegmentedBar>$0</SegmentedBar>",
+    "description": "Represents a UI SegmentedBar component.\n\nSource: https://docs.nativescript.org/api/class/SegmentedBar"
+  },
+  "SegmentedBar (properties)": {
+    "prefix": "ns-segmented-bar-prop",
+    "body": "<SegmentedBar\n\titems=\"${1:SegmentedBarItem}\"\n\tselectedBackgroundColor=\"${2:Color}\"\n\tselectedIndex=\"${3:number}\"\n\tselectedTextColor=\"${4:Color}\">$0</SegmentedBar>",
+    "description": "Represents a UI SegmentedBar component.\n\nSource: https://docs.nativescript.org/api/class/SegmentedBar"
+  },
+  "SegmentedBar (complete)": {
+    "prefix": "ns-segmented-bar-comp",
+    "body": "<SegmentedBar\n\titems=\"${1:SegmentedBarItem}\"\n\tselectedBackgroundColor=\"${2:Color}\"\n\tselectedIndex=\"${3:number}\"\n\tselectedTextColor=\"${4:Color}\"\n\t@selectedIndexChanged=\"${5}\">$0</SegmentedBar>\n<!--\nProperties\n  items (Array<SegmentedBarItem>) — Gets or sets the items of the SegmentedBar.\n  selectedBackgroundColor (Color) — Gets or sets the selected background color of the SegmentedBar comp...\n  selectedIndex (number) — Gets or sets the selected index of the SegmentedBar component.\n  selectedTextColor (Color) — Gets or sets the selected text color of the SegmentedBar component.\n\nEvents\n  selectedIndexChanged\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a UI SegmentedBar component.\n\nSource: https://docs.nativescript.org/api/class/SegmentedBar"
+  },
+  "SegmentedBarItem (default)": {
+    "prefix": "ns-segmented-bar-item",
+    "body": "<SegmentedBarItem>$0</SegmentedBarItem>",
+    "description": "Represents a SegmentedBar item.\n\nSource: https://docs.nativescript.org/api/class/SegmentedBarItem"
+  },
+  "SegmentedBarItem (properties)": {
+    "prefix": "ns-segmented-bar-item-prop",
+    "body": "<SegmentedBarItem\n\ttitle=\"${1:string}\">$0</SegmentedBarItem>",
+    "description": "Represents a SegmentedBar item.\n\nSource: https://docs.nativescript.org/api/class/SegmentedBarItem"
+  },
+  "SegmentedBarItem (complete)": {
+    "prefix": "ns-segmented-bar-item-comp",
+    "body": "<SegmentedBarItem\n\ttitle=\"${1:string}\">$0</SegmentedBarItem>\n<!--\nProperties\n  title (string) — Gets or sets the title of the SegmentedBarItem.\n\n+ 23 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 5 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a SegmentedBar item.\n\nSource: https://docs.nativescript.org/api/class/SegmentedBarItem"
+  },
+  "Slider (default)": {
+    "prefix": "ns-slider",
+    "body": "<Slider>$0</Slider>",
+    "description": "Represents a slider component.\n\nSource: https://docs.nativescript.org/api/class/Slider"
+  },
+  "Slider (properties)": {
+    "prefix": "ns-slider-prop",
+    "body": "<Slider\n\tmaxValue=\"${1:number}\"\n\tminValue=\"${2:number}\"\n\tvalue=\"${3:number}\">$0</Slider>",
+    "description": "Represents a slider component.\n\nSource: https://docs.nativescript.org/api/class/Slider"
+  },
+  "Slider (complete)": {
+    "prefix": "ns-slider-comp",
+    "body": "<Slider\n\tmaxValue=\"${1:number}\"\n\tminValue=\"${2:number}\"\n\tvalue=\"${3:number}\"\n\t@accessibilityDecrement=\"${4}\"\n\t@accessibilityIncrement=\"${5}\"\n\t@valueChange=\"${6}\">$0</Slider>\n<!--\nProperties\n  maxValue (number) — Gets or sets a slider max value\n  minValue (number) — Gets or sets a slider min value\n  value (number) — Gets or sets a slider current value\n\nEvents\n  accessibilityDecrement\n  accessibilityIncrement\n  valueChange\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a slider component.\n\nSource: https://docs.nativescript.org/api/class/Slider"
+  },
+  "Span (default)": {
+    "prefix": "ns-span",
+    "body": "<Span>$0</Span>",
+    "description": "A class used to create a single part of formatted string with a common text properties.\n\nSource: https://docs.nativescript.org/api/class/Span"
+  },
+  "Span (properties)": {
+    "prefix": "ns-span-prop",
+    "body": "<Span\n\tbackgroundColor=\"${1:Color}\"\n\tcolor=\"${2:Color}\"\n\tfontFamily=\"${3:string}\"\n\tfontSize=\"${4:number}\"\n\tfontStyle=\"${5:(normal|italic)}\"\n\tfontVariationSettings=\"${6:value}\"\n\tfontWeight=\"${7:(normal|100|200|300|400|500|600|bold|700|800|900|number)}\"\n\tiosAccessibilityAdjustsFontSize=\"${8:boolean}\"\n\tiosAccessibilityMaxFontScale=\"${9:number}\"\n\tiosAccessibilityMinFontScale=\"${10:number}\"\n\ttext=\"${11:string}\"\n\ttextDecoration=\"${12:(none|underline|line-through|underline line-through)}\">$0</Span>",
+    "description": "A class used to create a single part of formatted string with a common text properties.\n\nSource: https://docs.nativescript.org/api/class/Span"
+  },
+  "Span (complete)": {
+    "prefix": "ns-span-comp",
+    "body": "<Span\n\tbackgroundColor=\"${1:Color}\"\n\tcolor=\"${2:Color}\"\n\tfontFamily=\"${3:string}\"\n\tfontSize=\"${4:number}\"\n\tfontStyle=\"${5:(normal|italic)}\"\n\tfontVariationSettings=\"${6:value}\"\n\tfontWeight=\"${7:(normal|100|200|300|400|500|600|bold|700|800|900|number)}\"\n\tiosAccessibilityAdjustsFontSize=\"${8:boolean}\"\n\tiosAccessibilityMaxFontScale=\"${9:number}\"\n\tiosAccessibilityMinFontScale=\"${10:number}\"\n\ttext=\"${11:string}\"\n\ttextDecoration=\"${12:(none|underline|line-through|underline line-through)}\"\n\t@linkTap=\"${13}\">$0</Span>\n<!--\nProperties\n  backgroundColor (Color) — Gets or sets the font background color of the span.\n  color (Color) — Gets or sets the font foreground color of the span.\n  fontFamily (string) — Gets or sets the font family of the span.\n  fontSize (number) — Gets or sets the font size of the span.\n  fontStyle (FontStyleType) — Gets or sets the font style of the span.\n  fontVariationSettings ({}) — Gets or sets the font variation settings of the span.\n  fontWeight (FontWeightType) — Gets or sets the font weight of the span.\n  iosAccessibilityAdjustsFontSize (boolean) — Defines whether accessibility font scale should affect font size.\n  iosAccessibilityMaxFontScale (number) — Gets or sets the maximum accessibility font scale.\n  iosAccessibilityMinFontScale (number) — Gets or sets the minimum accessibility font scale.\n  text (string) — Gets or sets the text for the span.\n  textDecoration (TextDecorationType) — Gets or sets text decorations for the span.\n\nEvents\n  linkTap\n\n+ 23 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 5 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "A class used to create a single part of formatted string with a common text properties.\n\nSource: https://docs.nativescript.org/api/class/Span"
+  },
+  "Switch (default)": {
+    "prefix": "ns-switch",
+    "body": "<Switch>$0</Switch>",
+    "description": "Represents a switch component.\n\nSource: https://docs.nativescript.org/api/class/Switch"
+  },
+  "Switch (properties)": {
+    "prefix": "ns-switch-prop",
+    "body": "<Switch\n\tchecked=\"${1:boolean}\"\n\toffBackgroundColor=\"${2:Color}\">$0</Switch>",
+    "description": "Represents a switch component.\n\nSource: https://docs.nativescript.org/api/class/Switch"
+  },
+  "Switch (complete)": {
+    "prefix": "ns-switch-comp",
+    "body": "<Switch\n\tchecked=\"${1:boolean}\"\n\toffBackgroundColor=\"${2:Color}\"\n\t@checkedChange=\"${3}\">$0</Switch>\n<!--\nProperties\n  checked (boolean) — Gets or sets if a switch is checked or not.\n  offBackgroundColor (Color) — Gets or sets the background color of the Switch when it is turned off.\n\nEvents\n  checkedChange\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a switch component.\n\nSource: https://docs.nativescript.org/api/class/Switch"
+  },
+  "TabView (default)": {
+    "prefix": "ns-tab-view",
+    "body": "<TabView>$0</TabView>",
+    "description": "Represents a tab view.\n\nSource: https://docs.nativescript.org/api/class/TabView"
+  },
+  "TabView (properties)": {
+    "prefix": "ns-tab-view-prop",
+    "body": "<TabView\n\tandroidIconRenderingMode=\"${1:(alwaysOriginal|alwaysTemplate)}\"\n\tandroidOffscreenTabLimit=\"${2:number}\"\n\tandroidSelectedTabHighlightColor=\"${3:Color}\"\n\tandroidSwipeEnabled=\"${4:boolean}\"\n\tandroidTabsPosition=\"${5:(top|bottom)}\"\n\tiosBottomAccessory=\"${6:View}\"\n\tiosIconRenderingMode=\"${7:(automatic|alwaysOriginal|alwaysTemplate)}\"\n\tiosTabBarMinimizeBehavior=\"${8:(never|automatic|onScrollDown|onScrollUp)}\"\n\titems=\"${9:TabViewItem}\"\n\tselectedIndex=\"${10:number}\"\n\tselectedTabTextColor=\"${11:Color}\"\n\ttabBackgroundColor=\"${12:Color}\"\n\ttabTextColor=\"${13:Color}\"\n\ttabTextFontSize=\"${14:number}\">$0</TabView>",
+    "description": "Represents a tab view.\n\nSource: https://docs.nativescript.org/api/class/TabView"
+  },
+  "TabView (complete)": {
+    "prefix": "ns-tab-view-comp",
+    "body": "<TabView\n\tandroidIconRenderingMode=\"${1:(alwaysOriginal|alwaysTemplate)}\"\n\tandroidOffscreenTabLimit=\"${2:number}\"\n\tandroidSelectedTabHighlightColor=\"${3:Color}\"\n\tandroidSwipeEnabled=\"${4:boolean}\"\n\tandroidTabsPosition=\"${5:(top|bottom)}\"\n\tiosBottomAccessory=\"${6:View}\"\n\tiosIconRenderingMode=\"${7:(automatic|alwaysOriginal|alwaysTemplate)}\"\n\tiosTabBarMinimizeBehavior=\"${8:(never|automatic|onScrollDown|onScrollUp)}\"\n\titems=\"${9:TabViewItem}\"\n\tselectedIndex=\"${10:number}\"\n\tselectedTabTextColor=\"${11:Color}\"\n\ttabBackgroundColor=\"${12:Color}\"\n\ttabTextColor=\"${13:Color}\"\n\ttabTextFontSize=\"${14:number}\"\n\t@selectedIndexChanged=\"${15}\">$0</TabView>\n<!--\nProperties\n  androidIconRenderingMode ('alwaysOriginal' | 'alwaysTemplate') — Gets or sets the rendering mode of tab icons on Android\n  androidOffscreenTabLimit (number) — Gets or sets the number of tabs that should be retained to either s...\n  androidSelectedTabHighlightColor (Color) — Gets or sets the color of the horizontal line drawn below the curre...\n  androidSwipeEnabled (boolean) — Gets or sets a value indicating whether swipe gesture is enabled fo...\n  androidTabsPosition ('top' | 'bottom') — Gets or set the tabs vertical position\n  iosBottomAccessory (View) — iOS 26+: Optional bottom accessory view that appears above the tab bar\n  iosIconRenderingMode ('automatic' | 'alwaysOriginal' | 'alwaysTemplate') — Gets or set the UIImageRenderingMode of the tab icons in iOS\n  iosTabBarMinimizeBehavior (TabBarMinimizeType) — Gets or sets the iOS tab bar minimize behavior (iOS 26+).\n  items (Array<TabViewItem>) — Gets or sets the items of the TabView.\n  selectedIndex (number) — Gets or sets the selectedIndex of the TabView.\n  selectedTabTextColor (Color) — Gets or sets the text color of the selected tab title.\n  tabBackgroundColor (Color) — Gets or sets the background color of the tabs.\n  tabTextColor (Color) — Gets or sets the text color of the tabs titles.\n  tabTextFontSize (number) — Gets or sets the font size of the tabs titles.\n\nEvents\n  selectedIndexChanged\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a tab view.\n\nSource: https://docs.nativescript.org/api/class/TabView"
+  },
+  "TabViewItem (default)": {
+    "prefix": "ns-tab-view-item",
+    "body": "<TabViewItem>$0</TabViewItem>",
+    "description": "Represents a tab view entry.\n\nSource: https://docs.nativescript.org/api/class/TabViewItem"
+  },
+  "TabViewItem (properties)": {
+    "prefix": "ns-tab-view-item-prop",
+    "body": "<TabViewItem\n\ticonFontFamily=\"${1:string}\"\n\ticonSource=\"${2:string}\"\n\trole=\"${3:search}\"\n\ttextTransform=\"${4:(none|capitalize|uppercase|lowercase)}\"\n\ttitle=\"${5:string}\"\n\tview=\"${6:View}\">$0</TabViewItem>",
+    "description": "Represents a tab view entry.\n\nSource: https://docs.nativescript.org/api/class/TabViewItem"
+  },
+  "TabViewItem (complete)": {
+    "prefix": "ns-tab-view-item-comp",
+    "body": "<TabViewItem\n\ticonFontFamily=\"${1:string}\"\n\ticonSource=\"${2:string}\"\n\trole=\"${3:search}\"\n\ttextTransform=\"${4:(none|capitalize|uppercase|lowercase)}\"\n\ttitle=\"${5:string}\"\n\tview=\"${6:View}\">$0</TabViewItem>\n<!--\nProperties\n  iconFontFamily (string) — Gets or sets the font family used to render the TabViewItem icon.\n  iconSource (string) — Gets or sets the icon source of the TabViewItem\n  role (string) — Gets or sets the role of the TabViewItem.\n  textTransform (TextTransformType) — Gets or sets the text transform of the tab titles.\n  title (string) — Gets or sets the title of the TabViewItem.\n  view (View) — Gets or sets the view of the TabViewItem.\n\n+ 23 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 5 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a tab view entry.\n\nSource: https://docs.nativescript.org/api/class/TabViewItem"
+  },
+  "TextField (default)": {
+    "prefix": "ns-text-field",
+    "body": "<TextField>$0</TextField>",
+    "description": "Represents an editable text field.\n\nSource: https://docs.nativescript.org/api/class/TextField"
+  },
+  "TextField (properties)": {
+    "prefix": "ns-text-field-prop",
+    "body": "<TextField\n\tautocapitalizationType=\"${1:(none|words|sentences|allcharacters)}\"\n\tautocorrect=\"${2:boolean}\"\n\tautofillType=\"${3:string}\"\n\tcloseOnReturn=\"${4:boolean}\"\n\teditable=\"${5:boolean}\"\n\tformattedText=\"${6:FormattedString}\"\n\thint=\"${7:string}\"\n\tiosTextAnimation=\"${8:boolean}\"\n\tkeyboardType=\"${9:(number|datetime|phone|decimal|url|email|integer)}\"\n\tletterSpacing=\"${10:number}\"\n\tlineHeight=\"${11:number}\"\n\tmaxLength=\"${12:number}\"\n\tmaxLines=\"${13:number}\"\n\tpadding=\"${14:number}\"\n\tplaceholderColor=\"${15:Color}\"\n\treturnKeyType=\"${16:(done|next|go|search|send)}\"\n\tsecure=\"${17:boolean}\"\n\tsecureWithoutAutofill=\"${18:boolean}\"\n\ttext=\"${19:string}\"\n\ttextAlignment=\"${20:(center|left|right|justify)}\"\n\ttextDecoration=\"${21:(none|underline|line-through|underline line-through)}\"\n\ttextOverflow=\"${22:(clip|ellipsis)}\"\n\ttextShadow=\"${23:0 2 4 #00000088}\"\n\ttextStroke=\"${24:1 #000000}\"\n\ttextTransform=\"${25:(none|capitalize|uppercase|lowercase)}\"\n\tupdateTextTrigger=\"${26:(focusLost|textChanged)}\"\n\twhiteSpace=\"${27:(nowrap|wrap|normal)}\">$0</TextField>",
+    "description": "Represents an editable text field.\n\nSource: https://docs.nativescript.org/api/class/TextField"
+  },
+  "TextField (complete)": {
+    "prefix": "ns-text-field-comp",
+    "body": "<TextField\n\tautocapitalizationType=\"${1:(none|words|sentences|allcharacters)}\"\n\tautocorrect=\"${2:boolean}\"\n\tautofillType=\"${3:string}\"\n\tcloseOnReturn=\"${4:boolean}\"\n\teditable=\"${5:boolean}\"\n\tformattedText=\"${6:FormattedString}\"\n\thint=\"${7:string}\"\n\tiosTextAnimation=\"${8:boolean}\"\n\tkeyboardType=\"${9:(number|datetime|phone|decimal|url|email|integer)}\"\n\tletterSpacing=\"${10:number}\"\n\tlineHeight=\"${11:number}\"\n\tmaxLength=\"${12:number}\"\n\tmaxLines=\"${13:number}\"\n\tpadding=\"${14:number}\"\n\tplaceholderColor=\"${15:Color}\"\n\treturnKeyType=\"${16:(done|next|go|search|send)}\"\n\tsecure=\"${17:boolean}\"\n\tsecureWithoutAutofill=\"${18:boolean}\"\n\ttext=\"${19:string}\"\n\ttextAlignment=\"${20:(center|left|right|justify)}\"\n\ttextDecoration=\"${21:(none|underline|line-through|underline line-through)}\"\n\ttextOverflow=\"${22:(clip|ellipsis)}\"\n\ttextShadow=\"${23:0 2 4 #00000088}\"\n\ttextStroke=\"${24:1 #000000}\"\n\ttextTransform=\"${25:(none|capitalize|uppercase|lowercase)}\"\n\tupdateTextTrigger=\"${26:(focusLost|textChanged)}\"\n\twhiteSpace=\"${27:(nowrap|wrap|normal)}\"\n\t@blur=\"${28}\"\n\t@focus=\"${29}\"\n\t@returnPress=\"${30}\"\n\t@textChange=\"${31}\">$0</TextField>\n<!--\nProperties\n  autocapitalizationType (AutocapitalizationInputType) — Gets or sets the autocapitalization type.\n  autocorrect (boolean) — Enables or disables autocorrection.\n  autofillType (string) — Gets or sets the autofill type.\n  closeOnReturn (boolean) — Gets or sets if a text field should dismiss on return.\n  editable (boolean) — Gets or sets whether the instance is editable.\n  formattedText (FormattedString) — Gets or sets a formatted string.\n  hint (string) — Gets or sets the placeholder text.\n  iosTextAnimation (boolean | 'inherit') — Specify wether the native text should be applied with or without an...\n  keyboardType (KeyboardInputType) — Gets or sets the soft keyboard type.\n  letterSpacing (number) — Gets or sets letterSpace style property.\n  lineHeight (number) — Gets or sets lineHeight style property.\n  maxLength (number) — Limits input to a certain number of characters.\n  maxLines (number)\n  padding (string | number | LengthDipUnit | LengthPxUnit) — Gets or sets padding style property.\n  placeholderColor (Color) — Gets or sets the color of the placeholder text\n  returnKeyType (ReturnKeyButtonType) — Gets or sets the soft keyboard return key flavor.\n  secure (boolean) — Gets or sets if a text field is for password entry.\n  secureWithoutAutofill (boolean) — iOS only (to avoid 12+ auto suggested strong password handling)\n  text (string) — Gets or sets the text.\n  textAlignment (TextAlignmentType) — Gets or sets text-alignment style property.\n  textDecoration (TextDecorationType) — Gets or sets text decorations style property.\n  textOverflow (TextOverflowType) — Gets or sets text-overflow style property.\n  textShadow (ShadowCSSValues) — Gets or sets text shadow style property.\n  textStroke (StrokeCSSValues) — Gets or sets text stroke style property.\n  textTransform (TextTransformType) — Gets or sets text transform style property.\n  updateTextTrigger (UpdateTextTriggerType) — Gets or sets a value indicating when the text property will be upda...\n  whiteSpace (WhiteSpaceType) — Gets or sets white space style property.\n\nEvents\n  blur\n  focus\n  returnPress\n  textChange\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents an editable text field.\n\nSource: https://docs.nativescript.org/api/class/TextField"
+  },
+  "TextView (default)": {
+    "prefix": "ns-text-view",
+    "body": "<TextView>$0</TextView>",
+    "description": "Represents an editable multiline text view.\n\nSource: https://docs.nativescript.org/api/class/TextView"
+  },
+  "TextView (properties)": {
+    "prefix": "ns-text-view-prop",
+    "body": "<TextView\n\tautocapitalizationType=\"${1:(none|words|sentences|allcharacters)}\"\n\tautocorrect=\"${2:boolean}\"\n\tautofillType=\"${3:string}\"\n\teditable=\"${4:boolean}\"\n\tformattedText=\"${5:FormattedString}\"\n\thint=\"${6:string}\"\n\tiosTextAnimation=\"${7:boolean}\"\n\tiosWritingToolsAllowedInput=\"${8:value}\"\n\tiosWritingToolsBehavior=\"${9:number}\"\n\tkeyboardType=\"${10:(number|datetime|phone|decimal|url|email|integer)}\"\n\tletterSpacing=\"${11:number}\"\n\tlineHeight=\"${12:number}\"\n\tmaxLength=\"${13:number}\"\n\tmaxLines=\"${14:number}\"\n\tpadding=\"${15:number}\"\n\tplaceholderColor=\"${16:Color}\"\n\treturnKeyType=\"${17:(done|next|go|search|send)}\"\n\ttext=\"${18:string}\"\n\ttextAlignment=\"${19:(center|left|right|justify)}\"\n\ttextDecoration=\"${20:(none|underline|line-through|underline line-through)}\"\n\ttextOverflow=\"${21:(clip|ellipsis)}\"\n\ttextShadow=\"${22:0 2 4 #00000088}\"\n\ttextStroke=\"${23:1 #000000}\"\n\ttextTransform=\"${24:(none|capitalize|uppercase|lowercase)}\"\n\tupdateTextTrigger=\"${25:(focusLost|textChanged)}\"\n\twhiteSpace=\"${26:(nowrap|wrap|normal)}\">$0</TextView>",
+    "description": "Represents an editable multiline text view.\n\nSource: https://docs.nativescript.org/api/class/TextView"
+  },
+  "TextView (complete)": {
+    "prefix": "ns-text-view-comp",
+    "body": "<TextView\n\tautocapitalizationType=\"${1:(none|words|sentences|allcharacters)}\"\n\tautocorrect=\"${2:boolean}\"\n\tautofillType=\"${3:string}\"\n\teditable=\"${4:boolean}\"\n\tformattedText=\"${5:FormattedString}\"\n\thint=\"${6:string}\"\n\tiosTextAnimation=\"${7:boolean}\"\n\tiosWritingToolsAllowedInput=\"${8:value}\"\n\tiosWritingToolsBehavior=\"${9:number}\"\n\tkeyboardType=\"${10:(number|datetime|phone|decimal|url|email|integer)}\"\n\tletterSpacing=\"${11:number}\"\n\tlineHeight=\"${12:number}\"\n\tmaxLength=\"${13:number}\"\n\tmaxLines=\"${14:number}\"\n\tpadding=\"${15:number}\"\n\tplaceholderColor=\"${16:Color}\"\n\treturnKeyType=\"${17:(done|next|go|search|send)}\"\n\ttext=\"${18:string}\"\n\ttextAlignment=\"${19:(center|left|right|justify)}\"\n\ttextDecoration=\"${20:(none|underline|line-through|underline line-through)}\"\n\ttextOverflow=\"${21:(clip|ellipsis)}\"\n\ttextShadow=\"${22:0 2 4 #00000088}\"\n\ttextStroke=\"${23:1 #000000}\"\n\ttextTransform=\"${24:(none|capitalize|uppercase|lowercase)}\"\n\tupdateTextTrigger=\"${25:(focusLost|textChanged)}\"\n\twhiteSpace=\"${26:(nowrap|wrap|normal)}\"\n\t@blur=\"${27}\"\n\t@focus=\"${28}\"\n\t@returnPress=\"${29}\"\n\t@textChange=\"${30}\">$0</TextView>\n<!--\nProperties\n  autocapitalizationType (AutocapitalizationInputType) — Gets or sets the autocapitalization type.\n  autocorrect (boolean) — Enables or disables autocorrection.\n  autofillType (string) — Gets or sets the autofill type.\n  editable (boolean) — Gets or sets whether the instance is editable.\n  formattedText (FormattedString) — Gets or sets a formatted string.\n  hint (string) — Gets or sets the placeholder text.\n  iosTextAnimation (boolean | 'inherit') — Specify wether the native text should be applied with or without an...\n  iosWritingToolsAllowedInput ({})\n  iosWritingToolsBehavior (WritingToolsBehavior)\n  keyboardType (KeyboardInputType) — Gets or sets the soft keyboard type.\n  letterSpacing (number) — Gets or sets letterSpace style property.\n  lineHeight (number) — Gets or sets lineHeight style property.\n  maxLength (number) — Limits input to a certain number of characters.\n  maxLines (number) — Limits input to a certain number of lines.\n  padding (string | number | LengthDipUnit | LengthPxUnit) — Gets or sets padding style property.\n  placeholderColor (Color) — Gets or sets the color of the placeholder text\n  returnKeyType (ReturnKeyButtonType) — Gets or sets the soft keyboard return key flavor.\n  text (string) — Gets or sets the text.\n  textAlignment (TextAlignmentType) — Gets or sets text-alignment style property.\n  textDecoration (TextDecorationType) — Gets or sets text decorations style property.\n  textOverflow (TextOverflowType) — Gets or sets text-overflow style property.\n  textShadow (ShadowCSSValues) — Gets or sets text shadow style property.\n  textStroke (StrokeCSSValues) — Gets or sets text stroke style property.\n  textTransform (TextTransformType) — Gets or sets text transform style property.\n  updateTextTrigger (UpdateTextTriggerType) — Gets or sets a value indicating when the text property will be upda...\n  whiteSpace (WhiteSpaceType) — Gets or sets white space style property.\n\nEvents\n  blur\n  focus\n  returnPress\n  textChange\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents an editable multiline text view.\n\nSource: https://docs.nativescript.org/api/class/TextView"
+  },
+  "TimePicker (default)": {
+    "prefix": "ns-time-picker",
+    "body": "<TimePicker>$0</TimePicker>",
+    "description": "Represents an time picker.\n\nSource: https://docs.nativescript.org/api/class/TimePicker"
+  },
+  "TimePicker (properties)": {
+    "prefix": "ns-time-picker-prop",
+    "body": "<TimePicker\n\thour=\"${1:number}\"\n\tiosPreferredDatePickerStyle=\"${2:number}\"\n\tmaxHour=\"${3:number}\"\n\tmaxMinute=\"${4:number}\"\n\tminHour=\"${5:number}\"\n\tminMinute=\"${6:number}\"\n\tminute=\"${7:number}\"\n\tminuteInterval=\"${8:number}\"\n\ttime=\"${9:Date}\">$0</TimePicker>",
+    "description": "Represents an time picker.\n\nSource: https://docs.nativescript.org/api/class/TimePicker"
+  },
+  "TimePicker (complete)": {
+    "prefix": "ns-time-picker-comp",
+    "body": "<TimePicker\n\thour=\"${1:number}\"\n\tiosPreferredDatePickerStyle=\"${2:number}\"\n\tmaxHour=\"${3:number}\"\n\tmaxMinute=\"${4:number}\"\n\tminHour=\"${5:number}\"\n\tminMinute=\"${6:number}\"\n\tminute=\"${7:number}\"\n\tminuteInterval=\"${8:number}\"\n\ttime=\"${9:Date}\"\n\t@timeChange=\"${10}\">$0</TimePicker>\n<!--\nProperties\n  hour (number) — Gets or sets the time hour.\n  iosPreferredDatePickerStyle (number) — Gets or set the UIDatePickerStyle of the date picker in iOS 13.4+\n  maxHour (number) — Gets or sets the max time hour.\n  maxMinute (number) — Gets or sets the max time minute.\n  minHour (number) — Gets or sets the min time hour.\n  minMinute (number) — Gets or sets the min time minute.\n  minute (number) — Gets or sets the time minute.\n  minuteInterval (number) — Gets or sets the minute interval.\n  time (Date) — Gets or sets the time.\n\nEvents\n  timeChange\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents an time picker.\n\nSource: https://docs.nativescript.org/api/class/TimePicker"
+  },
+  "WebView (default)": {
+    "prefix": "ns-web-view",
+    "body": "<WebView>$0</WebView>",
+    "description": "Represents a standard WebView widget.\n\nSource: https://docs.nativescript.org/api/class/WebView"
+  },
+  "WebView (properties)": {
+    "prefix": "ns-web-view-prop",
+    "body": "<WebView\n\tdisableZoom=\"${1:boolean}\"\n\tiosAllowInlineMediaPlayback=\"${2:boolean}\"\n\tsrc=\"${3:string}\">$0</WebView>",
+    "description": "Represents a standard WebView widget.\n\nSource: https://docs.nativescript.org/api/class/WebView"
+  },
+  "WebView (complete)": {
+    "prefix": "ns-web-view-comp",
+    "body": "<WebView\n\tdisableZoom=\"${1:boolean}\"\n\tiosAllowInlineMediaPlayback=\"${2:boolean}\"\n\tsrc=\"${3:string}\"\n\t@loadFinished=\"${4}\"\n\t@loadStarted=\"${5}\">$0</WebView>\n<!--\nProperties\n  disableZoom (boolean) — Disable scrolling in the WebView\n  iosAllowInlineMediaPlayback (boolean) — Enables inline media playback on iOS\n  src (string) — Gets or sets the url, local file path or HTML string.\n\nEvents\n  loadFinished\n  loadStarted\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "Represents a standard WebView widget.\n\nSource: https://docs.nativescript.org/api/class/WebView"
+  },
+  "NavigationButton (default)": {
+    "prefix": "ns-navigation-button",
+    "body": "<NavigationButton>$0</NavigationButton>",
+    "description": "A common abstraction over the iOS back button and the Android navigation button, shown inside the ActionBar.\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "NavigationButton (properties)": {
+    "prefix": "ns-navigation-button-prop",
+    "body": "<NavigationButton\n\tactionView=\"${1:View}\"\n\ticon=\"${2:string}\"\n\ttext=\"${3:string}\"\n\tvisibility=\"${4:string}\">$0</NavigationButton>",
+    "description": "A common abstraction over the iOS back button and the Android navigation button, shown inside the ActionBar.\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "NavigationButton (complete)": {
+    "prefix": "ns-navigation-button-comp",
+    "body": "<NavigationButton\n\tactionView=\"${1:View}\"\n\ticon=\"${2:string}\"\n\ttext=\"${3:string}\"\n\tvisibility=\"${4:string}\"\n\t@tap=\"${5}\">$0</NavigationButton>\n<!--\nProperties\n  actionView (View) — Gets or sets the custom action view of the action item.\n  icon (string) — Gets or sets the icon of the action item.\n  text (string) — Gets or sets the text of the action item.\n  visibility (string) — Gets or sets the visibility of the action item.\n\nEvents\n  tap\n\n+ 23 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 5 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "A common abstraction over the iOS back button and the Android navigation button, shown inside the ActionBar.\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "LiquidGlass (default)": {
+    "prefix": "ns-liquid-glass",
+    "body": "<LiquidGlass>\n\t$0\n</LiquidGlass>",
+    "description": "iOS Liquid Glass layout — a GridLayout that renders its children inside a native glass (UIVisualEffectView) effect. The glass style is controlled by the inherited iosGlassEffect View property.\n\nSource: https://docs.nativescript.org/"
+  },
+  "LiquidGlass (properties)": {
+    "prefix": "ns-liquid-glass-prop",
+    "body": "<LiquidGlass\n\tclipToBounds=\"${1:boolean}\"\n\tcolumns=\"${2:string}\"\n\tisPassThroughParentEnabled=\"${3:boolean}\"\n\tpadding=\"${4:number}\"\n\trows=\"${5:string}\">$0</LiquidGlass>",
+    "description": "iOS Liquid Glass layout — a GridLayout that renders its children inside a native glass (UIVisualEffectView) effect. The glass style is controlled by the inherited iosGlassEffect View property.\n\nSource: https://docs.nativescript.org/"
+  },
+  "LiquidGlass (complete)": {
+    "prefix": "ns-liquid-glass-comp",
+    "body": "<LiquidGlass\n\tclipToBounds=\"${1:boolean}\"\n\tcolumns=\"${2:string}\"\n\tisPassThroughParentEnabled=\"${3:boolean}\"\n\tpadding=\"${4:number}\"\n\trows=\"${5:string}\">$0</LiquidGlass>\n<!--\nProperties\n  clipToBounds (boolean) — Gets or sets a value indicating whether to clip the content of this...\n  columns (string) — A string value representing column widths delimited with commas\n  isPassThroughParentEnabled (boolean) — Gets or sets a value indicating whether touch event should pass thr...\n  padding (string | number | LengthDipUnit | LengthPxUnit) — Gets or sets padding style property.\n  rows (string) — A string value representing row heights delimited with commas\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "iOS Liquid Glass layout — a GridLayout that renders its children inside a native glass (UIVisualEffectView) effect. The glass style is controlled by the inherited iosGlassEffect View property.\n\nSource: https://docs.nativescript.org/"
+  },
+  "LiquidGlassContainer (default)": {
+    "prefix": "ns-liquid-glass-container",
+    "body": "<LiquidGlassContainer>\n\t$0\n</LiquidGlassContainer>",
+    "description": "iOS Liquid Glass container — an AbsoluteLayout that hosts and merges Liquid Glass children (it can stabilize/normalize their glass effects). The glass style is controlled by the inherited iosGlassEffect View property.\n\nSource: https://docs.nativescript.org/"
+  },
+  "LiquidGlassContainer (properties)": {
+    "prefix": "ns-liquid-glass-container-prop",
+    "body": "<LiquidGlassContainer\n\tclipToBounds=\"${1:boolean}\"\n\tisPassThroughParentEnabled=\"${2:boolean}\"\n\tpadding=\"${3:number}\">$0</LiquidGlassContainer>",
+    "description": "iOS Liquid Glass container — an AbsoluteLayout that hosts and merges Liquid Glass children (it can stabilize/normalize their glass effects). The glass style is controlled by the inherited iosGlassEffect View property.\n\nSource: https://docs.nativescript.org/"
+  },
+  "LiquidGlassContainer (complete)": {
+    "prefix": "ns-liquid-glass-container-comp",
+    "body": "<LiquidGlassContainer\n\tclipToBounds=\"${1:boolean}\"\n\tisPassThroughParentEnabled=\"${2:boolean}\"\n\tpadding=\"${3:number}\">$0</LiquidGlassContainer>\n<!--\nProperties\n  clipToBounds (boolean) — Gets or sets a value indicating whether to clip the content of this...\n  isPassThroughParentEnabled (boolean) — Gets or sets a value indicating whether touch event should pass thr...\n  padding (string | number | LengthDipUnit | LengthPxUnit) — Gets or sets padding style property.\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n-->",
+    "description": "iOS Liquid Glass container — an AbsoluteLayout that hosts and merges Liquid Glass children (it can stabilize/normalize their glass effects). The glass style is controlled by the inherited iosGlassEffect View property.\n\nSource: https://docs.nativescript.org/"
+  }
+}

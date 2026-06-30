@@ -1,0 +1,212 @@
+{
+  "AbsoluteLayout (default)": {
+    "prefix": "ns-absolute-layout",
+    "body": "<absoluteLayout>\n\t$0\n</absoluteLayout>",
+    "description": "A layout that lets you specify exact locations (left/top coordinates) of its children.\n\nSource: https://docs.nativescript.org/api/class/AbsoluteLayout"
+  },
+  "AbsoluteLayout (properties)": {
+    "prefix": "ns-absolute-layout-prop",
+    "body": "<absoluteLayout\n\tclipToBounds=\"${1:boolean}\"\n\tisPassThroughParentEnabled=\"${2:boolean}\"\n\tpadding=\"${3:number}\">$0</absoluteLayout>",
+    "description": "A layout that lets you specify exact locations (left/top coordinates) of its children.\n\nSource: https://docs.nativescript.org/api/class/AbsoluteLayout"
+  },
+  "AbsoluteLayout (complete)": {
+    "prefix": "ns-absolute-layout-comp",
+    "body": "<absoluteLayout\n\tclipToBounds=\"${1:boolean}\"\n\tisPassThroughParentEnabled=\"${2:boolean}\"\n\tpadding=\"${3:number}\">$0</absoluteLayout>\n{/*\nProperties\n  clipToBounds (boolean) — Gets or sets a value indicating whether to clip the content of this...\n  isPassThroughParentEnabled (boolean) — Gets or sets a value indicating whether touch event should pass thr...\n  padding (string | number | LengthDipUnit | LengthPxUnit) — Gets or sets padding style property.\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n*/}",
+    "description": "A layout that lets you specify exact locations (left/top coordinates) of its children.\n\nSource: https://docs.nativescript.org/api/class/AbsoluteLayout"
+  },
+  "DockLayout (default)": {
+    "prefix": "ns-dock-layout",
+    "body": "<dockLayout>\n\t$0\n</dockLayout>",
+    "description": "A Layout that arranges its children at its outer edges, and allows its last child to take up the remaining space.\n\nSource: https://docs.nativescript.org/api/class/DockLayout"
+  },
+  "DockLayout (properties)": {
+    "prefix": "ns-dock-layout-prop",
+    "body": "<dockLayout\n\tclipToBounds=\"${1:boolean}\"\n\tisPassThroughParentEnabled=\"${2:boolean}\"\n\tpadding=\"${3:number}\"\n\tstretchLastChild=\"${4:boolean}\">$0</dockLayout>",
+    "description": "A Layout that arranges its children at its outer edges, and allows its last child to take up the remaining space.\n\nSource: https://docs.nativescript.org/api/class/DockLayout"
+  },
+  "DockLayout (complete)": {
+    "prefix": "ns-dock-layout-comp",
+    "body": "<dockLayout\n\tclipToBounds=\"${1:boolean}\"\n\tisPassThroughParentEnabled=\"${2:boolean}\"\n\tpadding=\"${3:number}\"\n\tstretchLastChild=\"${4:boolean}\">$0</dockLayout>\n{/*\nProperties\n  clipToBounds (boolean) — Gets or sets a value indicating whether to clip the content of this...\n  isPassThroughParentEnabled (boolean) — Gets or sets a value indicating whether touch event should pass thr...\n  padding (string | number | LengthDipUnit | LengthPxUnit) — Gets or sets padding style property.\n  stretchLastChild (boolean) — Gets or sets a value that indicates whether the last child element ...\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n*/}",
+    "description": "A Layout that arranges its children at its outer edges, and allows its last child to take up the remaining space.\n\nSource: https://docs.nativescript.org/api/class/DockLayout"
+  },
+  "FlexboxLayout (default)": {
+    "prefix": "ns-flexbox-layout",
+    "body": "<flexboxLayout>\n\t$0\n</flexboxLayout>",
+    "description": "NativeScript FlexboxLayout.\n\nSource: https://docs.nativescript.org/api/class/FlexboxLayout"
+  },
+  "FlexboxLayout (properties)": {
+    "prefix": "ns-flexbox-layout-prop",
+    "body": "<flexboxLayout\n\talignContent=\"${1:(flex-start|flex-end|center|space-between|space-around|stretch)}\"\n\talignItems=\"${2:(flex-start|flex-end|center|baseline|stretch)}\"\n\tclipToBounds=\"${3:boolean}\"\n\tflexDirection=\"${4:(row|row-reverse|column|column-reverse)}\"\n\tflexWrap=\"${5:(nowrap|wrap|wrap-reverse)}\"\n\tisPassThroughParentEnabled=\"${6:boolean}\"\n\tjustifyContent=\"${7:(flex-start|flex-end|center|space-between|space-around)}\"\n\tpadding=\"${8:number}\">$0</flexboxLayout>",
+    "description": "NativeScript FlexboxLayout.\n\nSource: https://docs.nativescript.org/api/class/FlexboxLayout"
+  },
+  "FlexboxLayout (complete)": {
+    "prefix": "ns-flexbox-layout-comp",
+    "body": "<flexboxLayout\n\talignContent=\"${1:(flex-start|flex-end|center|space-between|space-around|stretch)}\"\n\talignItems=\"${2:(flex-start|flex-end|center|baseline|stretch)}\"\n\tclipToBounds=\"${3:boolean}\"\n\tflexDirection=\"${4:(row|row-reverse|column|column-reverse)}\"\n\tflexWrap=\"${5:(nowrap|wrap|wrap-reverse)}\"\n\tisPassThroughParentEnabled=\"${6:boolean}\"\n\tjustifyContent=\"${7:(flex-start|flex-end|center|space-between|space-around)}\"\n\tpadding=\"${8:number}\">$0</flexboxLayout>\n{/*\nProperties\n  alignContent (AlignContent) — Gets or sets alignment of items along the cross axis\n  alignItems (AlignItems) — Gets or sets alignment of the childern on cross axis\n  clipToBounds (boolean) — Gets or sets a value indicating whether to clip the content of this...\n  flexDirection (FlexDirection) — Gets or set the direction of childern on the main axis.\n  flexWrap (FlexWrap) — Gets or sets whether children can wrap into multiple lines\n  isPassThroughParentEnabled (boolean) — Gets or sets a value indicating whether touch event should pass thr...\n  justifyContent (JustifyContent) — Gets or sets alignment of childern on the main axis\n  padding (string | number | LengthDipUnit | LengthPxUnit) — Gets or sets padding style property.\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n*/}",
+    "description": "NativeScript FlexboxLayout.\n\nSource: https://docs.nativescript.org/api/class/FlexboxLayout"
+  },
+  "GridLayout (default)": {
+    "prefix": "ns-grid-layout",
+    "body": "<gridLayout>\n\t$0\n</gridLayout>",
+    "description": "Defines a rectangular layout area that consists of columns and rows.\n\nSource: https://docs.nativescript.org/api/class/GridLayout"
+  },
+  "GridLayout (properties)": {
+    "prefix": "ns-grid-layout-prop",
+    "body": "<gridLayout\n\tclipToBounds=\"${1:boolean}\"\n\tcolumns=\"${2:string}\"\n\tisPassThroughParentEnabled=\"${3:boolean}\"\n\tpadding=\"${4:number}\"\n\trows=\"${5:string}\">$0</gridLayout>",
+    "description": "Defines a rectangular layout area that consists of columns and rows.\n\nSource: https://docs.nativescript.org/api/class/GridLayout"
+  },
+  "GridLayout (complete)": {
+    "prefix": "ns-grid-layout-comp",
+    "body": "<gridLayout\n\tclipToBounds=\"${1:boolean}\"\n\tcolumns=\"${2:string}\"\n\tisPassThroughParentEnabled=\"${3:boolean}\"\n\tpadding=\"${4:number}\"\n\trows=\"${5:string}\">$0</gridLayout>\n{/*\nProperties\n  clipToBounds (boolean) — Gets or sets a value indicating whether to clip the content of this...\n  columns (string) — A string value representing column widths delimited with commas\n  isPassThroughParentEnabled (boolean) — Gets or sets a value indicating whether touch event should pass thr...\n  padding (string | number | LengthDipUnit | LengthPxUnit) — Gets or sets padding style property.\n  rows (string) — A string value representing row heights delimited with commas\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n*/}",
+    "description": "Defines a rectangular layout area that consists of columns and rows.\n\nSource: https://docs.nativescript.org/api/class/GridLayout"
+  },
+  "StackLayout (default)": {
+    "prefix": "ns-stack-layout",
+    "body": "<stackLayout>\n\t$0\n</stackLayout>",
+    "description": "A Layout that arranges its children horizontally or vertically. The direction can be set by orientation property.\n\nSource: https://docs.nativescript.org/api/class/StackLayout"
+  },
+  "StackLayout (properties)": {
+    "prefix": "ns-stack-layout-prop",
+    "body": "<stackLayout\n\tclipToBounds=\"${1:boolean}\"\n\tisPassThroughParentEnabled=\"${2:boolean}\"\n\torientation=\"${3:(horizontal|vertical)}\"\n\tpadding=\"${4:number}\">$0</stackLayout>",
+    "description": "A Layout that arranges its children horizontally or vertically. The direction can be set by orientation property.\n\nSource: https://docs.nativescript.org/api/class/StackLayout"
+  },
+  "StackLayout (complete)": {
+    "prefix": "ns-stack-layout-comp",
+    "body": "<stackLayout\n\tclipToBounds=\"${1:boolean}\"\n\tisPassThroughParentEnabled=\"${2:boolean}\"\n\torientation=\"${3:(horizontal|vertical)}\"\n\tpadding=\"${4:number}\">$0</stackLayout>\n{/*\nProperties\n  clipToBounds (boolean) — Gets or sets a value indicating whether to clip the content of this...\n  isPassThroughParentEnabled (boolean) — Gets or sets a value indicating whether touch event should pass thr...\n  orientation (OrientationType) — Gets or sets if layout should be horizontal or vertical\n  padding (string | number | LengthDipUnit | LengthPxUnit) — Gets or sets padding style property.\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n*/}",
+    "description": "A Layout that arranges its children horizontally or vertically. The direction can be set by orientation property.\n\nSource: https://docs.nativescript.org/api/class/StackLayout"
+  },
+  "WrapLayout (default)": {
+    "prefix": "ns-wrap-layout",
+    "body": "<wrapLayout>\n\t$0\n</wrapLayout>",
+    "description": "WrapLayout position children in rows or columns depending on orientation property until space is filled and then wraps them on new row or column.\n\nSource: https://docs.nativescript.org/api/class/WrapLayout"
+  },
+  "WrapLayout (properties)": {
+    "prefix": "ns-wrap-layout-prop",
+    "body": "<wrapLayout\n\tclipToBounds=\"${1:boolean}\"\n\tisPassThroughParentEnabled=\"${2:boolean}\"\n\titemHeight=\"${3:(auto|number)}\"\n\titemWidth=\"${4:(auto|number)}\"\n\torientation=\"${5:(horizontal|vertical)}\"\n\tpadding=\"${6:number}\">$0</wrapLayout>",
+    "description": "WrapLayout position children in rows or columns depending on orientation property until space is filled and then wraps them on new row or column.\n\nSource: https://docs.nativescript.org/api/class/WrapLayout"
+  },
+  "WrapLayout (complete)": {
+    "prefix": "ns-wrap-layout-comp",
+    "body": "<wrapLayout\n\tclipToBounds=\"${1:boolean}\"\n\tisPassThroughParentEnabled=\"${2:boolean}\"\n\titemHeight=\"${3:(auto|number)}\"\n\titemWidth=\"${4:(auto|number)}\"\n\torientation=\"${5:(horizontal|vertical)}\"\n\tpadding=\"${6:number}\">$0</wrapLayout>\n{/*\nProperties\n  clipToBounds (boolean) — Gets or sets a value indicating whether to clip the content of this...\n  isPassThroughParentEnabled (boolean) — Gets or sets a value indicating whether touch event should pass thr...\n  itemHeight (LengthType) — Gets or sets the height used to measure and layout each child\n  itemWidth (LengthType) — Gets or sets the width used to measure and layout each child\n  orientation (OrientationType) — Gets or sets the flow direction\n  padding (string | number | LengthDipUnit | LengthPxUnit) — Gets or sets padding style property.\n\n+ 117 inherited View properties (id, class, width, height, margin, backgroundColor, visibility, ...) and 12 events (loaded, unloaded, layoutChanged, ...).\n*/}",
+    "description": "WrapLayout position children in rows or columns depending on orientation property until space is filled and then wraps them on new row or column.\n\nSource: https://docs.nativescript.org/api/class/WrapLayout"
+  },
+  "AbsoluteLayout (snippet 1)": {
+    "prefix": "ns-absolute-layout-snippet-1",
+    "body": "<absoluteLayout width=\"210\" height=\"210\" backgroundColor=\"lightgray\">\n  <label text=\"10, 10\" left=\"10\" top=\"10\" width=\"90\" height=\"90\" backgroundColor=\"red\"></label>\n  <label text=\"110, 10\" left=\"110\" top=\"10\" width=\"90\" height=\"90\" backgroundColor=\"green\"></label>\n  <label text=\"110, 110\" left=\"110\" top=\"110\" width=\"90\" height=\"90\" backgroundColor=\"blue\"></label>\n  <label text=\"10, 110\" left=\"10\" top=\"110\" width=\"90\" height=\"90\" backgroundColor=\"yellow\"></label>\n</absoluteLayout>",
+    "description": "A layout that lets you specify exact locations (left/top coordinates) of its children.\n\nSource: https://docs.nativescript.org/api/class/AbsoluteLayout"
+  },
+  "AbsoluteLayout (snippet 2)": {
+    "prefix": "ns-absolute-layout-snippet-2",
+    "body": "<absoluteLayout width=\"210\" height=\"210\" backgroundColor=\"lightgray\">\n  <label text=\"no margin\" left=\"10\" top=\"10\" width=\"100\" height=\"100\" backgroundColor=\"red\"></label>\n  <label text=\"margin=`30`\" left=\"10\" top=\"10\" margin=\"30\" width=\"100\" height=\"90\" backgroundColor=\"green\"></label>\n</absoluteLayout>",
+    "description": "A layout that lets you specify exact locations (left/top coordinates) of its children.\n\nSource: https://docs.nativescript.org/api/class/AbsoluteLayout"
+  },
+  "DockLayout (snippet 1)": {
+    "prefix": "ns-dock-layout-snippet-1",
+    "body": "<dockLayout width=\"210\" height=\"210\" backgroundColor=\"lightgray\" stretchLastChild=\"false\">\n  <label text=\"left\" dock=\"left\" width=\"60\" backgroundColor=\"red\"></label>\n  <label text=\"top\" dock=\"top\" height=\"60\" backgroundColor=\"green\"></label>\n  <label text=\"right\" dock=\"right\" width=\"60\" backgroundColor=\"blue\"></label>\n  <label text=\"bottom\" dock=\"bottom\" height=\"60\" backgroundColor=\"yellow\"></label>\n</dockLayout>",
+    "description": "A Layout that arranges its children at its outer edges, and allows its last child to take up the remaining space.\n\nSource: https://docs.nativescript.org/api/class/DockLayout"
+  },
+  "DockLayout (snippet 2)": {
+    "prefix": "ns-dock-layout-snippet-2",
+    "body": "<dockLayout width=\"210\" height=\"210\" backgroundColor=\"lightgray\" stretchLastChild=\"true\">\n  <label text=\"left\" dock=\"left\" backgroundColor=\"red\"></label>\n  <label text=\"top\" dock=\"top\" backgroundColor=\"green\"></label>\n  <label text=\"right\" dock=\"right\" backgroundColor=\"blue\"></label>\n  <label text=\"bottom\" dock=\"bottom\" backgroundColor=\"yellow\"></label>\n</dockLayout>",
+    "description": "A Layout that arranges its children at its outer edges, and allows its last child to take up the remaining space.\n\nSource: https://docs.nativescript.org/api/class/DockLayout"
+  },
+  "DockLayout (snippet 3)": {
+    "prefix": "ns-dock-layout-snippet-3",
+    "body": "<dockLayout width=\"210\" height=\"210\" backgroundColor=\"lightgray\" stretchLastChild=\"true\">\n  <label text=\"left1\" dock=\"left\" backgroundColor=\"red\"></label>\n  <label text=\"left2\" dock=\"left\" backgroundColor=\"green\"></label>\n  <label text=\"left3\" dock=\"left\" backgroundColor=\"blue\"></label>\n  <label text=\"last child\" backgroundColor=\"yellow\"></label>\n</dockLayout>",
+    "description": "A Layout that arranges its children at its outer edges, and allows its last child to take up the remaining space.\n\nSource: https://docs.nativescript.org/api/class/DockLayout"
+  },
+  "GridLayout (snippet 1)": {
+    "prefix": "ns-grid-layout-snippet-1",
+    "body": "<gridLayout columns=\"50, auto, *\" rows=\"50, auto, *\" width=\"210\" height=\"210\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" row=\"0\" col=\"0\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" row=\"0\" col=\"1\" colSpan=\"2\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" row=\"1\" col=\"0\" rowSpan=\"2\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" row=\"1\" col=\"1\" backgroundColor=\"yellow\"></label>\n  <label text=\"Label 5\" row=\"1\" col=\"2\" backgroundColor=\"orange\"></label>\n  <label text=\"Label 6\" row=\"2\" col=\"1\" backgroundColor=\"pink\"></label>\n  <label text=\"Label 7\" row=\"2\" col=\"2\" backgroundColor=\"purple\"></label>\n</gridLayout>",
+    "description": "Defines a rectangular layout area that consists of columns and rows.\n\nSource: https://docs.nativescript.org/api/class/GridLayout"
+  },
+  "GridLayout (snippet 2)": {
+    "prefix": "ns-grid-layout-snippet-2",
+    "body": "<gridLayout columns=\"*,2*\" rows=\"2*,3*\" width=\"300\" height=\"300\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" col=\"0\" row=\"0\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" col=\"1\" row=\"0\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" col=\"0\" row=\"1\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" col=\"1\" row=\"1\" backgroundColor=\"yellow\"></label>\n</gridLayout>",
+    "description": "Defines a rectangular layout area that consists of columns and rows.\n\nSource: https://docs.nativescript.org/api/class/GridLayout"
+  },
+  "GridLayout (snippet 3)": {
+    "prefix": "ns-grid-layout-snippet-3",
+    "body": "<gridLayout columns=\"100,auto\" rows=\"100,auto\" width=\"210\" height=\"210\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" col=\"0\" row=\"0\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" col=\"1\" row=\"0\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" col=\"0\" row=\"1\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" col=\"1\" row=\"1\" backgroundColor=\"yellow\"></label>\n</gridLayout>",
+    "description": "Defines a rectangular layout area that consists of columns and rows.\n\nSource: https://docs.nativescript.org/api/class/GridLayout"
+  },
+  "GridLayout (snippet 4)": {
+    "prefix": "ns-grid-layout-snippet-4",
+    "body": "<stackLayout width=\"200\" height=\"200\" backgroundColor=\"palegreen\">\n  <gridLayout columns=\"*,2*\" horizontalAlignment=\"left\" verticalAlignment=\"top\" backgroundColor=\"lightgray\">\n    <label text=\"Label 1\" col=\"0\" backgroundColor=\"red\"></label>\n    <label text=\"Label 2\" col=\"1\" backgroundColor=\"green\"></label>\n  </gridLayout>\n</stackLayout>",
+    "description": "Defines a rectangular layout area that consists of columns and rows.\n\nSource: https://docs.nativescript.org/api/class/GridLayout"
+  },
+  "GridLayout (snippet 5)": {
+    "prefix": "ns-grid-layout-snippet-5",
+    "body": "<gridLayout columns=\"auto,100\" rows=\"auto,auto\" width=\"300\" height=\"300\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" col=\"0\" row=\"0\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" col=\"1\" row=\"0\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" width=\"150\" col=\"0\" row=\"1\" backgroundColor=\"blue\"></label>\n</gridLayout>",
+    "description": "Defines a rectangular layout area that consists of columns and rows.\n\nSource: https://docs.nativescript.org/api/class/GridLayout"
+  },
+  "GridLayout (snippet 6)": {
+    "prefix": "ns-grid-layout-snippet-6",
+    "body": "<gridLayout columns=\"auto, *, auto\" rows=\"auto, 25\" verticalAlignment=\"top\" backgroundColor=\"lightgray\">\n  <image src=\"~/cute.jpg\" rowSpan=\"2\" width=\"72\" height=\"72\" margin=\"3\" verticalAlignment=\"top\"></image>\n  <label text=\"My cat loves the camera\" textWrap=\"true\" col=\"1\" colSpan=\"2\" minHeight=\"50\" fontSize=\"20\" margin=\"3\"></label>\n  <label text=\"John Smith\" col=\"1\" row=\"1\" fontSize=\"14\" horizontalAlignment=\"left\" verticalAlignment=\"bottom\" margin=\"3\"></label>\n  <label text=\"comments: 26\" col=\"2\" row=\"1\" color=\"#10C2B0\" fontSize=\"14\" verticalAlignment=\"bottom\" margin=\"3\"></label>\n</gridLayout>",
+    "description": "Defines a rectangular layout area that consists of columns and rows.\n\nSource: https://docs.nativescript.org/api/class/GridLayout"
+  },
+  "StackLayout (snippet 1)": {
+    "prefix": "ns-stack-layout-snippet-1",
+    "body": "<stackLayout orientation=\"vertical\" width=\"210\" height=\"210\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" width=\"50\" height=\"50\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" width=\"50\" height=\"50\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" width=\"50\" height=\"50\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" width=\"50\" height=\"50\" backgroundColor=\"yellow\"></label>\n</stackLayout>",
+    "description": "A Layout that arranges its children horizontally or vertically. The direction can be set by orientation property.\n\nSource: https://docs.nativescript.org/api/class/StackLayout"
+  },
+  "StackLayout (snippet 2)": {
+    "prefix": "ns-stack-layout-snippet-2",
+    "body": "<stackLayout orientation=\"vertical\" width=\"210\" height=\"210\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" width=\"50\" height=\"50\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" width=\"50\" height=\"50\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" width=\"50\" height=\"50\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" width=\"50\" height=\"50\" backgroundColor=\"yellow\"></label>\n</stackLayout>",
+    "description": "A Layout that arranges its children horizontally or vertically. The direction can be set by orientation property.\n\nSource: https://docs.nativescript.org/api/class/StackLayout"
+  },
+  "StackLayout (snippet 3)": {
+    "prefix": "ns-stack-layout-snippet-3",
+    "body": "<stackLayout orientation=\"vertical\" width=\"210\" height=\"210\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" horizontalAlignment=\"left\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" horizontalAlignment=\"center\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" horizontalAlignment=\"right\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" horizontalAlignment=\"stretch\" backgroundColor=\"yellow\"></label>\n</stackLayout>",
+    "description": "A Layout that arranges its children horizontally or vertically. The direction can be set by orientation property.\n\nSource: https://docs.nativescript.org/api/class/StackLayout"
+  },
+  "StackLayout (snippet 4)": {
+    "prefix": "ns-stack-layout-snippet-4",
+    "body": "<stackLayout orientation=\"horizontal\" width=\"210\" height=\"210\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" verticalAlignment=\"top\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" verticalAlignment=\"center\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" verticalAlignment=\"bottom\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" verticalAlignment=\"stretch\" backgroundColor=\"yellow\"></label>\n</stackLayout>",
+    "description": "A Layout that arranges its children horizontally or vertically. The direction can be set by orientation property.\n\nSource: https://docs.nativescript.org/api/class/StackLayout"
+  },
+  "WrapLayout (snippet 1)": {
+    "prefix": "ns-wrap-layout-snippet-1",
+    "body": "<wrapLayout orientation=\"horizontal\" width=\"210\" height=\"210\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" width=\"70\" height=\"70\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" width=\"70\" height=\"70\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" width=\"70\" height=\"70\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" width=\"70\" height=\"70\" backgroundColor=\"yellow\"></label>\n</wrapLayout>",
+    "description": "WrapLayout position children in rows or columns depending on orientation property until space is filled and then wraps them on new row or column.\n\nSource: https://docs.nativescript.org/api/class/WrapLayout"
+  },
+  "WrapLayout (snippet 2)": {
+    "prefix": "ns-wrap-layout-snippet-2",
+    "body": "<wrapLayout orientation=\"vertical\" width=\"210\" height=\"210\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" width=\"70\" height=\"70\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" width=\"70\" height=\"70\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" width=\"70\" height=\"70\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" width=\"70\" height=\"70\" backgroundColor=\"yellow\"></label>\n</wrapLayout>",
+    "description": "WrapLayout position children in rows or columns depending on orientation property until space is filled and then wraps them on new row or column.\n\nSource: https://docs.nativescript.org/api/class/WrapLayout"
+  },
+  "WrapLayout (snippet 3)": {
+    "prefix": "ns-wrap-layout-snippet-3",
+    "body": "<wrapLayout itemWidth=\"30\" itemHeight=\"30\" width=\"210\" height=\"210\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" width=\"70\" height=\"70\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" width=\"70\" height=\"70\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" width=\"70\" height=\"70\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" width=\"70\" height=\"70\" backgroundColor=\"yellow\"></label>\n</wrapLayout>",
+    "description": "WrapLayout position children in rows or columns depending on orientation property until space is filled and then wraps them on new row or column.\n\nSource: https://docs.nativescript.org/api/class/WrapLayout"
+  },
+  "FlexboxLayout (snippet 1)": {
+    "prefix": "ns-flexbox-layout-snippet-1",
+    "body": "<flexboxLayout width=\"300\" height=\"300\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" width=\"70\" height=\"70\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" width=\"70\" height=\"70\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" width=\"70\" height=\"70\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" width=\"70\" height=\"70\" backgroundColor=\"yellow\"></label>\n</flexboxLayout>",
+    "description": "NativeScript FlexboxLayout.\n\nSource: https://docs.nativescript.org/api/class/FlexboxLayout"
+  },
+  "FlexboxLayout (snippet 2)": {
+    "prefix": "ns-flexbox-layout-snippet-2",
+    "body": "<flexboxLayout flexDirection=\"column\" width=\"300\" height=\"300\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" width=\"70\" height=\"70\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" width=\"70\" height=\"70\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" width=\"70\" height=\"70\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" width=\"70\" height=\"70\" backgroundColor=\"yellow\"></label>\n</flexboxLayout>",
+    "description": "NativeScript FlexboxLayout.\n\nSource: https://docs.nativescript.org/api/class/FlexboxLayout"
+  },
+  "FlexboxLayout (snippet 3)": {
+    "prefix": "ns-flexbox-layout-snippet-3",
+    "body": "<flexboxLayout alignItems=\"flex-start\" width=\"300\" height=\"300\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" width=\"70\" height=\"70\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" width=\"70\" height=\"70\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" width=\"70\" height=\"70\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" width=\"70\" height=\"70\" backgroundColor=\"yellow\"></label>\n</flexboxLayout>",
+    "description": "NativeScript FlexboxLayout.\n\nSource: https://docs.nativescript.org/api/class/FlexboxLayout"
+  },
+  "FlexboxLayout (snippet 4)": {
+    "prefix": "ns-flexbox-layout-snippet-4",
+    "body": "<flexboxLayout alignItems=\"flex-start\" width=\"300\" height=\"300\" backgroundColor=\"lightgray\">\n  <label order=\"3\" text=\"Label 1\" width=\"70\" height=\"70\" backgroundColor=\"red\"></label>\n  <label order=\"4\" text=\"Label 2\" width=\"70\" height=\"70\" backgroundColor=\"green\"></label>\n  <label order=\"2\" text=\"Label 3\" width=\"70\" height=\"70\" backgroundColor=\"blue\"></label>\n  <label order=\"1\" text=\"Label 4\" width=\"70\" height=\"70\" backgroundColor=\"yellow\"></label>\n</flexboxLayout>",
+    "description": "NativeScript FlexboxLayout.\n\nSource: https://docs.nativescript.org/api/class/FlexboxLayout"
+  },
+  "FlexboxLayout (snippet 5)": {
+    "prefix": "ns-flexbox-layout-snippet-5",
+    "body": "<flexboxLayout flexWrap=\"wrap\" height=\"300\" width=\"300\" backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" width=\"100\" height=\"50\" backgroundColor=\"red\"></label>\n  <label text=\"Label 2\" width=\"100\" height=\"50\" backgroundColor=\"green\"></label>\n  <label text=\"Label 3\" width=\"100\" height=\"50\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" width=\"100\" height=\"50\" backgroundColor=\"yellow\"></label>\n</flexboxLayout>",
+    "description": "NativeScript FlexboxLayout.\n\nSource: https://docs.nativescript.org/api/class/FlexboxLayout"
+  },
+  "FlexboxLayout (snippet 6)": {
+    "prefix": "ns-flexbox-layout-snippet-6",
+    "body": "<flexboxLayout flexDirection=\"column-reverse\" justifyContent=\"space-around\" alignItems=\"stretch\" height=\"300\" width=\"300\"\n  backgroundColor=\"lightgray\">\n  <label text=\"Label 1\" width=\"50\" height=\"50\" backgroundColor=\"red\"></label>\n  <label alignSelf=\"center\" text=\"Label 2\" width=\"50\" height=\"50\" backgroundColor=\"green\"></label>\n  <label alignSelf=\"flex-end\" text=\"Label 3\" width=\"50\" height=\"50\" backgroundColor=\"blue\"></label>\n  <label text=\"Label 4\" width=\"50\" height=\"50\" backgroundColor=\"yellow\"></label>\n</flexboxLayout>",
+    "description": "NativeScript FlexboxLayout.\n\nSource: https://docs.nativescript.org/api/class/FlexboxLayout"
+  }
+}

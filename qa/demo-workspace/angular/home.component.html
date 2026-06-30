@@ -1,0 +1,26 @@
+<!-- NativeScript Angular template (language id: html).
+     Try snippets in context: place the cursor on a blank line and type
+     ns-action-item, ns-list-view-comp, ns-button-prop, ns-tap, ns-icon-search … -->
+<ActionBar [title]="title">
+  <ActionItem icon="res://icon" ios.position="left" (tap)="onTap()"></ActionItem>
+  <!-- ns-action-item / ns-icon-* go here -->
+</ActionBar>
+
+<GridLayout rows="auto, *" columns="*">
+  <Button row="0" text="Refresh" (tap)="onTap()"></Button>
+
+  <ListView row="1" [items]="items">
+    <ng-template let-item="item">
+      <StackLayout orientation="horizontal" padding="12">
+        <Label [text]="item.name"></Label>
+
+        <!-- Default -->
+
+        <!-- Prop -->
+
+        <!-- Comp -->
+
+      </StackLayout>
+    </ng-template>
+  </ListView>
+</GridLayout>

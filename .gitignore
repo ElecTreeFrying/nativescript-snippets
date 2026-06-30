@@ -1,3 +1,11 @@
-snippets/cson
-.vscode-test/
 *.vsix
+node_modules/
+.DS_Store
+# .claude/ is local-only — not committed
+.claude/
+
+# tools/ is local-only (the snippet generator) — not committed
+tools/
+
+# demo-video masters — converted to .gif for the README; kept local, not committed (see .vscodeignore)
+images/*.mov

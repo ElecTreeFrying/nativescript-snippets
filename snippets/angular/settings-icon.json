@@ -1,0 +1,122 @@
+{
+  "Settings Icon - done": {
+    "prefix": "ns-icon-done",
+    "body": "0",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - cancel": {
+    "prefix": "ns-icon-cancel",
+    "body": "1",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - edit": {
+    "prefix": "ns-icon-edit",
+    "body": "2",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - save": {
+    "prefix": "ns-icon-save",
+    "body": "3",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - add": {
+    "prefix": "ns-icon-add",
+    "body": "4",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - flexibleSpace": {
+    "prefix": "ns-icon-flexibleSpace",
+    "body": "5",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - fixedSpace": {
+    "prefix": "ns-icon-fixedSpace",
+    "body": "6",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - compose": {
+    "prefix": "ns-icon-compose",
+    "body": "7",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - reply": {
+    "prefix": "ns-icon-reply",
+    "body": "8",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - action": {
+    "prefix": "ns-icon-action",
+    "body": "9",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - organize": {
+    "prefix": "ns-icon-organize",
+    "body": "10",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - bookmarks": {
+    "prefix": "ns-icon-bookmarks",
+    "body": "11",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - search": {
+    "prefix": "ns-icon-search",
+    "body": "12",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - refresh": {
+    "prefix": "ns-icon-refresh",
+    "body": "13",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - stop": {
+    "prefix": "ns-icon-stop",
+    "body": "14",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - camera": {
+    "prefix": "ns-icon-camera",
+    "body": "15",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - trash": {
+    "prefix": "ns-icon-trash",
+    "body": "16",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - play": {
+    "prefix": "ns-icon-play",
+    "body": "17",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - pause": {
+    "prefix": "ns-icon-pause",
+    "body": "18",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - rewind": {
+    "prefix": "ns-icon-rewind",
+    "body": "19",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - fastForward": {
+    "prefix": "ns-icon-fastForward",
+    "body": "20",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - undo": {
+    "prefix": "ns-icon-undo",
+    "body": "21",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - redo": {
+    "prefix": "ns-icon-redo",
+    "body": "22",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  },
+  "Settings Icon - pageCurl": {
+    "prefix": "ns-icon-pageCurl",
+    "body": "23",
+    "description": "iOS ActionItem ios.systemIcon value from the UIBarButtonSystemItem enumeration. Referenced by ActionItem snippets via icon=\"(snippet: ns-icon-*)\".\n\nSource: https://docs.nativescript.org/ui/action-bar"
+  }
+}
