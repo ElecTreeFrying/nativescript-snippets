@@ -1,0 +1,48 @@
+name: Feature request
+description: A component, prefix, or flavor you're missing
+labels: [ "enhancement" ]
+body:
+  - type: checkboxes
+    id: prior
+    attributes:
+      label: Before filing
+      options:
+        - label: I searched [existing issues](https://github.com/ElecTreeFrying/nativescript-snippets/issues?q=is%3Aissue) and this isn't already requested
+          required: true
+        - label: I checked [the full prefix reference](https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/reference.md) and the snippet doesn't already exist
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you want a snippet for?
+      description: The component, layout, gesture, or icon — and which flavor(s) you need it in.
+      placeholder: 'e.g. a BottomNavigation snippet in Vue · SplitView for React and Svelte · a new ns-longpress gesture'
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: The exact expansion you'd expect
+      description: Paste the markup as you'd want it inserted, tab-stops included.
+      placeholder: |
+        <BottomNavigation>
+          <TabStrip>
+            <TabStripItem title="${1:Home}"></TabStripItem>
+          </TabStrip>
+        </BottomNavigation>
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Where does it come from in @nativescript/core?
+      description: >
+        Snippets are generated from the `@nativescript/core` v9 TypeScript types — a request backed by a real
+        exported element is far easier to accept. Link the class or the docs page. If it has no type
+        representation (a gesture, an iOS system icon, a hand-written example layout), say so — those are
+        curated by hand instead.
+      placeholder: 'e.g. @nativescript/core/ui/bottom-navigation — BottomNavigation extends TabNavigationBase'
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How do you handle it today?
+      description: By hand, a user snippet, another extension… (helps us judge urgency, and sometimes there's already a prefix for it — happy to point it out)

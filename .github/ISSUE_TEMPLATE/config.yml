@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Troubleshooting guide
+    url: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/SUPPORT.md
+    about: Symptom → cause → fix for the most common problems. Please check here first.
+  - name: Full specification
+    url: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/SPEC.md
+    about: The snippet grammar, prefix/variant model, and generation pipeline, documented in detail.
+  - name: Full prefix reference
+    url: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/reference.md
+    about: Every ns-* prefix, per flavor — check whether the snippet already exists before filing.
+  - name: Marketplace Q&A
+    url: https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets&ssr=false#qna
+    about: Ask a question or leave feedback on the Marketplace listing.

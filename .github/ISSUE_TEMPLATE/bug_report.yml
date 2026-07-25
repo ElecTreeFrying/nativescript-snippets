@@ -1,0 +1,90 @@
+name: Bug report
+description: A prefix didn't expand, expanded wrong, or didn't behave as documented
+labels: [ "bug" ]
+body:
+  - type: checkboxes
+    id: prior
+    attributes:
+      label: Before filing
+      options:
+        - label: I searched [existing issues](https://github.com/ElecTreeFrying/nativescript-snippets/issues?q=is%3Aissue) and this isn't a duplicate
+          required: true
+        - label: I checked [SUPPORT.md](https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/SUPPORT.md) for a known cause and fix
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Summary
+      description: One or two sentences — what went wrong, and how much it affects your work.
+      placeholder: 'e.g. ns-tap in a .vue template expands to the Angular form (tap)="…" — every gesture prefix is wrong in Vue'
+    validations:
+      required: true
+  - type: dropdown
+    id: flavor
+    attributes:
+      label: Which flavor?
+      description: The flavor is decided by the file's language mode, not by the project.
+      options:
+        - Angular — .html
+        - Core — .xml
+        - Vue — .vue
+        - React — .tsx / .jsx
+        - Svelte — .svelte
+    validations:
+      required: true
+  - type: input
+    id: prefix
+    attributes:
+      label: Which prefix?
+      description: The exact `ns-*` prefix you typed. Variants matter — bare, `-prop`, and `-comp` are separate snippets.
+      placeholder: 'e.g. ns-button · ns-listview-comp · ns-stacklayout-snippet-1 · ns-tap · ns-icon-compose'
+    validations:
+      required: true
+  - type: textarea
+    id: expansion
+    attributes:
+      label: Expansion produced vs. expected
+      description: Paste both exactly as they appeared.
+      placeholder: |
+        Produced:  <Button (tap)="onTap()"></Button>
+        Expected:  <Button @tap="onTap"></Button>
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps, starting from a fresh editor. Note whether you typed the prefix between elements or inside an opening tag — that distinction matters in .svelte and .vue.
+      placeholder: |
+        1. Open a .vue file
+        2. Inside <template>, type ns-tap
+        3. Accept the suggestion and observe the expansion
+    validations:
+      required: true
+  - type: textarea
+    id: conflicts
+    attributes:
+      label: Other snippet extensions installed
+      description: >
+        Cmd/Ctrl+Shift+P → **Extensions: Show Enabled Extensions** — list any other NativeScript, Angular,
+        Vue, React, or Svelte snippet extensions. Prefix collisions are the most common cause of a wrong or
+        missing expansion: another extension contributing `ns-*` to the same language wins some of the time.
+      placeholder: 'e.g. NativeScript + Angular Snippets (some-publisher), Svelte for VS Code'
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where does it happen?
+      options:
+        - VS Code desktop
+        - vscode.dev / github.dev (browser)
+        - VSCodium / Cursor / Windsurf (VS Code-compatible build)
+        - Remote — SSH, WSL, Dev Container, or Codespaces
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: VS Code version · extension version · OS
+      description: 'VS Code → **Help / Code → About**. Extension version is on its entry in the Extensions pane.'
+      placeholder: 'e.g. 1.102.0 · 1.0.0 · macOS 15.5'
+    validations:
+      required: true
