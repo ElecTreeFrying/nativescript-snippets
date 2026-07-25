@@ -24,12 +24,12 @@
 
 Stop hand-typing `<StackLayout>`, memorizing which props a `ListView` takes, or rewriting the same markup when you switch frameworks. This pack ships every NativeScript element three ways — bare, with properties, and fully documented — for all five flavors, generated straight from `@nativescript/core` v9 types so the properties and events always match the framework.
 
-![NativeScript Snippets — ns-switch expanding bare, then -prop, then -comp with IntelliSense and tab-stops](images/demo-variants.gif "One prefix, three levels of detail: ns-switch → the bare tag, every property as a tab-stop, then properties + events + an inline doc table")
+![NativeScript Snippets — ns-switch expanding bare, then -prop, then -comp with IntelliSense and tab-stops](https://raw.githubusercontent.com/ElecTreeFrying/nativescript-snippets/main/images/demo-variants.gif "One prefix, three levels of detail: ns-switch → the bare tag, every property as a tab-stop, then properties + events + an inline doc table")
 
 [**Full prefix reference →**][reference] · [**Snippet spec & generation pipeline →**][spec]
 
-[reference]: reference.md
-[spec]: SPEC.md
+[reference]: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/reference.md
+[spec]: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/SPEC.md
 
 ---
 
@@ -120,7 +120,7 @@ Events
 <button on:tap={onTap} />
 ```
 
-![The same ns-tap snippet in React (.tsx), Svelte (.svelte), and Angular (.html) — each expands to that flavor's event syntax](images/demo-flavors.gif "One prefix, every flavor: ns-tap → onTap={} in React, on:tap={} in Svelte, then (tap) in Angular")
+![The same ns-tap snippet in React (.tsx), Svelte (.svelte), and Angular (.html) — each expands to that flavor's event syntax](https://raw.githubusercontent.com/ElecTreeFrying/nativescript-snippets/main/images/demo-flavors.gif "One prefix, every flavor: ns-tap → onTap={} in React, on:tap={} in Svelte, then (tap) in Angular")
 
 ### Layouts
 
@@ -216,7 +216,7 @@ Most prefixes work in every flavor; a few are flavor-specific: `ActionBarExtensi
 
 If a prefix doesn't expand, snippets don't appear in `.vue` / `.svelte` files — including the common case where they fire **between** elements but not **inside** an element's opening tag — or a `.vue` template inserts the Angular form (`(tap)` instead of `@tap`), see [SUPPORT.md][support] for symptom → cause → fix.
 
-[support]: SUPPORT.md
+[support]: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/SUPPORT.md
 
 ---
 
@@ -224,7 +224,7 @@ If a prefix doesn't expand, snippets don't appear in `.vue` / `.svelte` files �
 
 See [CHANGELOG.md][changelog] for full release notes.
 
-[changelog]: CHANGELOG.md
+[changelog]: https://marketplace.visualstudio.com/items/ElecTreeFrying.nativescript-angular-html-snippets/changelog
 
 ---
 
@@ -232,7 +232,7 @@ See [CHANGELOG.md][changelog] for full release notes.
 
 Contributions, bug reports, and feature requests are welcome. Snippets are generated — see [SUPPORT.md][support-contrib] for the build/validate workflow, and [SPEC.md][spec] for the snippet grammar and generation pipeline.
 
-[support-contrib]: SUPPORT.md#contributing
+[support-contrib]: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/SUPPORT.md#contributing
 
 ---
 
