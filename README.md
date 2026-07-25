@@ -1,11 +1,11 @@
 # NativeScript Snippets
 
-[![version][version-badge]][marketplace]
-[![installs][installs-badge]][marketplace]
-[![downloads][downloads-badge]][marketplace]
-[![rating][rating-badge]][marketplace]
+[![version][version-badge]][package]
+[![installs][installs-badge]][package]
+[![downloads][downloads-badge]][package]
+[![rating][rating-badge]][package]
 [![license][license-badge]][repo]
-[![vscode][vscode-badge]][marketplace]
+[![vscode][vscode-badge]][package]
 
 [version-badge]: https://vsmarketplacebadges.dev/version-short/ElecTreeFrying.nativescript-angular-html-snippets.png
 [installs-badge]: https://vsmarketplacebadges.dev/installs-short/ElecTreeFrying.nativescript-angular-html-snippets.png
@@ -13,23 +13,23 @@
 [rating-badge]: https://vsmarketplacebadges.dev/rating-short/ElecTreeFrying.nativescript-angular-html-snippets.png
 [license-badge]: https://img.shields.io/github/license/ElecTreeFrying/nativescript-snippets
 [vscode-badge]: https://img.shields.io/badge/vscode-%3E%3D1.30.0-blue
-[marketplace]: https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets
+[package]: https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets
 [repo]: https://github.com/ElecTreeFrying/nativescript-snippets
 
-> **Type `ns-`, get the element.** Every NativeScript UI component, layout, gesture, and iOS icon — as a snippet, in your flavor's syntax.
+> **Type `ns-`, get the element.**
 
 **Angular** · **Core (XML)** · **Vue** · **React** · **Svelte**
 
 > **Built for `@nativescript/core` v9** — currently `9.0.20`.
 
-Stop hand-typing `<StackLayout>`, memorizing which props a `ListView` takes, or rewriting the same markup when you switch frameworks. This pack ships every NativeScript element three ways — bare, with properties, and fully documented — for all five flavors, generated straight from `@nativescript/core` v9 types so the properties and events always match the framework.
+Every NativeScript UI component, layout, gesture, and iOS icon — as a snippet, in your flavor's syntax. Stop hand-typing `<StackLayout>`, memorizing which props a `ListView` takes, or rewriting the same markup when you switch frameworks. This pack ships every element three ways — bare, with properties, and fully documented — for all five flavors, generated straight from `@nativescript/core` v9 types so the properties and events always match the framework.
 
 ![NativeScript Snippets — ns-switch expanding bare, then -prop, then -comp with IntelliSense and tab-stops](https://raw.githubusercontent.com/ElecTreeFrying/nativescript-snippets/main/images/demo-variants.gif "One prefix, three levels of detail: ns-switch → the bare tag, every property as a tab-stop, then properties + events + an inline doc table")
 
-[**Full prefix reference →**][reference] · [**Snippet spec & generation pipeline →**][spec]
+[**Full prefix reference →**][REFERENCE] · [**Snippet spec & generation pipeline →**][SPEC]
 
-[reference]: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/reference.md
-[spec]: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/SPEC.md
+[REFERENCE]: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/reference.md
+[SPEC]: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/SPEC.md
 
 ---
 
@@ -46,12 +46,12 @@ Stop hand-typing `<StackLayout>`, memorizing which props a `ListView` takes, or 
 
 ## Highlights
 
-- **One prefix, every flavor.** `ns-button` works whether you're in Angular HTML, Core XML, a Vue SFC, a React `.tsx`, or a Svelte component — the snippet emits the right tag case and event syntax for each.
-- **Three levels of detail.** Bare for speed, `-prop` for every property as a Tab-stop, `-comp` for properties **+** events **+** a documented property/event table inline.
-- **Generated from `@nativescript/core` v9** (currently `9.0.20`). Every property, type hint, and event is extracted from the framework's TypeScript types — the snippets can't drift from the API.
-- **Smart hints.** Enum props expand to their allowed values (`orientation="(horizontal|vertical)"`), and two-way-bindable props use each flavor's binding syntax (Angular `[(checked)]`, Svelte `bind:checked`).
-- **Everything you reach for.** Every UI component, all seven layout containers, ready-made example layouts (`ns-<layout>-snippet-N`), eight gestures, and 24 iOS system-icon values.
-- **Pure, declarative, private.** No runtime, no dependencies, no telemetry — just snippet JSON contributed to VS Code.
+- **One prefix, every flavor** — `ns-button` works whether you're in Angular HTML, Core XML, a Vue SFC, a React `.tsx`, or a Svelte component; the snippet emits the right tag case and event syntax for each.
+- **Three levels of detail** — bare for speed, `-prop` for every property as a Tab-stop, `-comp` for properties **+** events **+** a documented property/event table inline.
+- **Generated from `@nativescript/core` v9** — currently `9.0.20`; every property, type hint, and event is extracted from the framework's TypeScript types, so the snippets can't drift from the API.
+- **Smart hints** — enum props expand to their allowed values (`orientation="(horizontal|vertical)"`), and two-way-bindable props use each flavor's binding syntax (Angular `[(checked)]`, Svelte `bind:checked`).
+- **Everything you reach for** — every UI component, all seven layout containers, ready-made example layouts (`ns-<layout>-snippet-N`), eight gestures, and 24 iOS system-icon values.
+- **Pure, declarative, private** — no runtime, no dependencies, no telemetry; just snippet JSON contributed to VS Code.
 
 ---
 
@@ -154,11 +154,13 @@ Eight gesture bindings, one prefix each — adapted to the flavor's event syntax
 <ActionItem ios.systemIcon="14"></ActionItem>
 ```
 
-24 icons in all (`ns-icon-done`, `ns-icon-search`, `ns-icon-trash`, …) — see [reference.md][reference] for the complete list.
+24 icons in all (`ns-icon-done`, `ns-icon-search`, `ns-icon-trash`, …) — see [reference.md][REFERENCE] for the complete list.
+
+---
 
 ## Snippets
 
-This extension contributes **805 snippets** across **five NativeScript flavors**, generated from `@nativescript/core` v9.0.20. See **[reference.md](reference.md)** for the full prefix tables.
+This extension contributes **805 snippets** across **five NativeScript flavors**, generated from `@nativescript/core` v9.0.20. See **[reference.md](https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/reference.md)** for the full prefix tables.
 
 | Flavor | Language id(s) | Snippets |
 |---|---|---|
@@ -191,21 +193,27 @@ Most prefixes work in every flavor; a few are flavor-specific: `ActionBarExtensi
 | React | `typescriptreact`, `javascriptreact` | `<button text="…" onTap={onTap} />` |
 | Svelte | `svelte` | `<button text="…" on:tap={onTap} />` |
 
+---
+
 ## Installation
 
 **Requires VS Code 1.30.0 or later.**
 
 - **Marketplace:** Extensions view (<kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>) → search **NativeScript Snippets** by *ElecTreeFrying* → **Install**.
 - **CLI:** `code --install-extension ElecTreeFrying.nativescript-angular-html-snippets`
-- **Direct:** [VS Code Marketplace listing][marketplace]
+- **Direct:** [VS Code Marketplace listing][package]
+- **Cursor / Windsurf / VSCodium / Gitpod:** Search **NativeScript Snippets** in the Extensions panel — served via [Open VSX][open-vsx].
+
+[open-vsx]: https://open-vsx.org/extension/ElecTreeFrying/nativescript-angular-html-snippets
 
 ---
 
 ## Compatibility
 
-- **VS Code** 1.30.0 or later.
-- **Compatible hosts:** Cursor, VSCodium, Code Server, and other forks that implement the VS Code API at the same engine version.
-- **Runs in the browser:** Works in VS Code for the Web (`vscode.dev`, `github.dev`) too — it's a pure declarative extension, so there's no native code to hold it back.
+- **VS Code:** 1.30.0 or later.
+- **Registries:** Available on both the [VS Code Marketplace][package] and [Open VSX][open-vsx].
+- **Compatible hosts:** Cursor, Windsurf, VSCodium, Gitpod, Code Server, and other forks that implement the VS Code API at the same engine version — installable directly from their Extensions panel via Open VSX.
+- **Web:** Runs on [vscode.dev](https://vscode.dev) and [github.dev](https://github.dev) — it's a pure declarative extension, so there's no native code to hold it back.
 - **Languages:** Angular (`html`), Core (`xml`), and React (`typescriptreact`/`javascriptreact`) work out of the box; Vue and Svelte require the **Vue (Volar)** / **Svelte** language extensions.
 - **Footprint:** Pure declarative snippet JSON — zero runtime dependencies.
 - **Telemetry:** None. Everything runs locally.
@@ -214,25 +222,32 @@ Most prefixes work in every flavor; a few are flavor-specific: `ActionBarExtensi
 
 ## Troubleshooting
 
-If a prefix doesn't expand, snippets don't appear in `.vue` / `.svelte` files — including the common case where they fire **between** elements but not **inside** an element's opening tag — or a `.vue` template inserts the Angular form (`(tap)` instead of `@tap`), see [SUPPORT.md][support] for symptom → cause → fix.
+If a prefix doesn't expand, snippets don't appear in `.vue` / `.svelte` files, or a `.vue` template inserts the Angular form (`(tap)` instead of `@tap`) — see [SUPPORT.md][SUPPORT] for symptom → cause → fix.
 
-[support]: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/SUPPORT.md
+That includes the common case where Svelte snippets fire **between** elements but not **inside** an element's opening tag.
+
+Still stuck? Please open an issue on [GitHub Issues][issues].
+
+[SUPPORT]: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/SUPPORT.md
 
 ---
 
 ## Changelog
 
-See [CHANGELOG.md][changelog] for full release notes.
+See [CHANGELOG.md][CHANGELOG] for full release notes.
 
-[changelog]: https://marketplace.visualstudio.com/items/ElecTreeFrying.nativescript-angular-html-snippets/changelog
+[CHANGELOG]: https://marketplace.visualstudio.com/items/ElecTreeFrying.nativescript-angular-html-snippets/changelog
 
 ---
 
 ## Contributing
 
-Contributions, bug reports, and feature requests are welcome. Snippets are generated — see [SUPPORT.md][support-contrib] for the build/validate workflow, and [SPEC.md][spec] for the snippet grammar and generation pipeline.
+Contributions, bug reports, and feature requests are welcome in [GitHub Issues][issues]. Snippets are generated, not hand-written — see [SUPPORT.md][SUPPORT-CONTRIB] for the build/validate workflow and the architecture overview.
 
-[support-contrib]: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/SUPPORT.md#contributing
+See [SPEC.md][SPEC] for the snippet grammar and generation pipeline — behavior changes belong there too.
+
+[issues]: https://github.com/ElecTreeFrying/nativescript-snippets/issues
+[SUPPORT-CONTRIB]: https://github.com/ElecTreeFrying/nativescript-snippets/blob/main/SUPPORT.md#contributing
 
 ---
 
@@ -257,14 +272,14 @@ Contributions, bug reports, and feature requests are welcome. Snippets are gener
 
 ## Related
 
-- **[All extensions by ElecTreeFrying][publisher]** on the VS Code Marketplace.
+- **[All extensions by ElecTreeFrying][all]** on the VS Code Marketplace.
 
-[publisher]: https://marketplace.visualstudio.com/publishers/ElecTreeFrying
+[all]: https://marketplace.visualstudio.com/publishers/ElecTreeFrying
 
 ---
 
 ## License
 
-[MIT][license]
+[MIT][MIT]
 
-[license]: https://marketplace.visualstudio.com/items/ElecTreeFrying.nativescript-angular-html-snippets/license
+[MIT]: https://marketplace.visualstudio.com/items/ElecTreeFrying.nativescript-angular-html-snippets/license
