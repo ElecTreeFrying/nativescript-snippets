@@ -46,10 +46,13 @@
     "productivity"
   ],
   "galleryBanner": {
-    "color": "#494949",
+    "color": "#103A8C",
     "theme": "dark"
   },
   "pricing": "Free",
+  "sponsor": {
+    "url": "https://github.com/ElecTreeFrying/nativescript-snippets#support"
+  },
   "badges": [
     {
       "url": "https://vsmarketplacebadges.dev/version-short/ElecTreeFrying.nativescript-angular-html-snippets.png",
@@ -78,7 +81,7 @@
     "url": "https://github.com/ElecTreeFrying/nativescript-snippets.git"
   },
   "bugs": {
-    "email": "octobergroup721@gmail.com",
+    "email": "electreefrying.git@gmail.com",
     "url": "https://github.com/ElecTreeFrying/nativescript-snippets/issues"
   },
   "qna": "https://github.com/ElecTreeFrying/nativescript-snippets/issues",
