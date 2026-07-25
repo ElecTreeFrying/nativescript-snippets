@@ -1,6 +1,6 @@
 # Change Log
 
-## v1.0.0 (2026-6-30)
+## v1.0.0 (2026-06-30)
 
 ### Added
 
@@ -28,7 +28,7 @@
 - The whole modern tab-navigation family — `Tabs`, `BottomNavigation`, `TabStrip`, `TabStripItem`, `TabContentItem` — verified absent from `@nativescript/core` v9.0.20 (0 class declarations); it ships in a separate plugin now. Planned for a future plugin-aware release.
 - `SplitView` is emitted only for Angular/Core (it is not registered in the Vue/React/Svelte element registries).
 
-## v0.1.4 (2020-7-25)
+## v0.1.4 (2020-07-25)
 
 ### Added
 
@@ -39,13 +39,13 @@
 - Refreshed the README **Installation** instructions: raised the minimum supported editor from VS Code 1.30.0 to **1.42.0**, converted the steps to an explicit numbered list, and clarified the command-palette step (`Extensions: Install Extensions`).
 - Minor wording polish in the **Contributing** section. No snippet changes — the last release of the original Angular-only pack before the v1.0.0 rebuild.
 
-## v0.1.3 (2020-3-21)
+## v0.1.3 (2020-03-21)
 
 ### Changes
 
 - Tidied two README labels for consistent punctuation — a trailing period on the "Select Install Extensions" install step and on the "More extensions of mine" link in the Related section (both the link text and its reference definition were updated so the link kept resolving). A cosmetic copy-edit only; no snippet or reference changes.
 
-## v0.1.2 (2020-3-18)
+## v0.1.2 (2020-03-18)
 
 ### Added
 
@@ -62,7 +62,7 @@
 
 - Dropped the redundant, misspelled `snipet` keyword from `package.json` (replaced by `html`).
 
-## v0.1.1 (2020-3-18)
+## v0.1.1 (2020-03-18)
 
 ### Fixes
 
@@ -70,7 +70,7 @@
 - Corrected the `version` metadata in `package.json`, settling on `0.1.1` after a same-day publish scramble (a transient `0.2.0` bump and an accidental `0.0.1` were both walked back; no `0.2.0` was ever tagged or released).
 - Cleaned up `CHANGELOG.md` — fixed a misspelled `Fixex` heading and split the release notes into their own section.
 
-## v0.1.0 (2020-3-18)
+## v0.1.0 (2020-03-18)
 
 ### Added
 
