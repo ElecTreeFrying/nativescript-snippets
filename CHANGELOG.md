@@ -1,5 +1,21 @@
 # Change Log
 
+## v1.0.1 (2026-07-25)
+
+### Added
+
+- **Now on Open VSX.** The extension is published to the [Open VSX registry](https://open-vsx.org/extension/ElecTreeFrying/nativescript-angular-html-snippets), so it installs directly in VSCodium, Cursor, Windsurf, Gitpod, and other editors that don't use the Visual Studio Marketplace — and the README's Installation and Compatibility sections now cover those hosts.
+
+### Fixes
+
+- **Documentation links now work from the Marketplace listing.** The links to the prefix reference, the snippet spec, the support guide, and the changelog resolved only when the README was read on GitHub — on the extension's Marketplace page they led nowhere, and the demo animations didn't load. Both now resolve from either surface.
+
+### Changes
+
+- **Marketplace metadata.** The gallery banner was recolored to a deep blue that matches the icon, a **Sponsor** button now links to the README's Support section, and the issues contact email was updated. No snippet changes — the 805 snippets ship byte-identical to v1.0.0.
+- **README polish.** A consistent badge set, a tightened tagline, and the Troubleshooting section now ends with a direct GitHub Issues link.
+- New GitHub **issue forms** (bug report / feature request) with contact links, replacing free-form issues.
+
 ## v1.0.0 (2026-06-30)
 
 ### Added
