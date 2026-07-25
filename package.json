@@ -1,192 +1,192 @@
 {
-    "name": "nativescript-angular-html-snippets",
-    "publisher": "ElecTreeFrying",
-    "author": {
-        "name": "John James Ermitaño",
-        "email": "jjgermitano@gmail.com"
+  "name": "nativescript-angular-html-snippets",
+  "publisher": "ElecTreeFrying",
+  "author": {
+    "name": "John James Ermitaño",
+    "email": "jjgermitano@gmail.com"
+  },
+  "displayName": "NativeScript Snippets — Angular, Core, Vue, React, Svelte",
+  "description": "NativeScript UI snippets for every flavor — Angular (HTML), Core (XML), Vue, React, and Svelte. Component, layout, and gesture snippets generated from @nativescript/core types, so they stay accurate.",
+  "version": "1.0.0",
+  "icon": "images/icon.png",
+  "categories": [
+    "Snippets",
+    "Programming Languages"
+  ],
+  "keywords": [
+    "nativescript",
+    "nativescript-vue",
+    "nativescript-angular",
+    "nativescript-react",
+    "nativescript-svelte",
+    "nativescript core",
+    "snippets",
+    "code snippets",
+    "angular",
+    "vue",
+    "react",
+    "svelte",
+    "typescript",
+    "javascript",
+    "html",
+    "xml",
+    "intellisense",
+    "autocomplete",
+    "mobile",
+    "ios",
+    "android",
+    "cross-platform",
+    "native",
+    "ui",
+    "components",
+    "ui components",
+    "layout",
+    "gestures",
+    "markup",
+    "productivity"
+  ],
+  "galleryBanner": {
+    "color": "#494949",
+    "theme": "dark"
+  },
+  "pricing": "Free",
+  "badges": [
+    {
+      "url": "https://vsmarketplacebadges.dev/version-short/ElecTreeFrying.nativescript-angular-html-snippets.png",
+      "description": "Version badge",
+      "href": "https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets"
     },
-    "displayName": "NativeScript Snippets — Angular, Core, Vue, React, Svelte",
-    "description": "NativeScript UI snippets for every flavor — Angular (HTML), Core (XML), Vue, React, and Svelte. Component, layout, and gesture snippets generated from @nativescript/core types, so they stay accurate.",
-    "version": "1.0.0",
-    "icon": "images/icon.png",
-    "categories": [
-        "Snippets",
-        "Programming Languages"
-    ],
-    "keywords": [
-        "nativescript",
-        "nativescript-vue",
-        "nativescript-angular",
-        "nativescript-react",
-        "nativescript-svelte",
-        "nativescript core",
-        "snippets",
-        "code snippets",
-        "angular",
-        "vue",
-        "react",
-        "svelte",
-        "typescript",
-        "javascript",
-        "html",
-        "xml",
-        "intellisense",
-        "autocomplete",
-        "mobile",
-        "ios",
-        "android",
-        "cross-platform",
-        "native",
-        "ui",
-        "components",
-        "ui components",
-        "layout",
-        "gestures",
-        "markup",
-        "productivity"
-    ],
-    "galleryBanner": {
-        "color": "#494949",
-        "theme": "dark"
+    {
+      "url": "https://vsmarketplacebadges.dev/downloads-short/ElecTreeFrying.nativescript-angular-html-snippets.png",
+      "description": "Downloads badge",
+      "href": "https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets"
     },
-    "pricing": "Free",
-    "badges": [
-        {
-            "url": "https://vsmarketplacebadges.dev/version-short/ElecTreeFrying.nativescript-angular-html-snippets.png",
-            "description": "Version badge",
-            "href": "https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets"
-        },
-        {
-            "url": "https://vsmarketplacebadges.dev/downloads-short/ElecTreeFrying.nativescript-angular-html-snippets.png",
-            "description": "Downloads badge",
-            "href": "https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets"
-        },
-        {
-            "url": "https://vsmarketplacebadges.dev/installs-short/ElecTreeFrying.nativescript-angular-html-snippets.png",
-            "description": "Installs badge",
-            "href": "https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets"
-        },
-        {
-            "url": "https://vsmarketplacebadges.dev/rating-short/ElecTreeFrying.nativescript-angular-html-snippets.png",
-            "description": "Rating badge",
-            "href": "https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets"
-        }
-    ],
-    "homepage": "https://github.com/ElecTreeFrying/nativescript-snippets",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ElecTreeFrying/nativescript-snippets.git"
+    {
+      "url": "https://vsmarketplacebadges.dev/installs-short/ElecTreeFrying.nativescript-angular-html-snippets.png",
+      "description": "Installs badge",
+      "href": "https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets"
     },
-    "bugs": {
-        "email": "octobergroup721@gmail.com",
-        "url": "https://github.com/ElecTreeFrying/nativescript-snippets/issues"
-    },
-    "qna": "https://github.com/ElecTreeFrying/nativescript-snippets/issues",
-    "license": "MIT",
-    "engines": {
-        "vscode": "^1.30.0"
-    },
-    "capabilities": {
-        "untrustedWorkspaces": {
-            "supported": true
-        },
-        "virtualWorkspaces": true
-    },
-    "scripts": {
-        "generate": "node tools/extract.js && node tools/render.js && node tools/gen-docs.js && node tools/validate.js && node tools/check-coverage.js",
-        "validate": "node tools/validate.js",
-        "check": "node tools/check-coverage.js"
-    },
-    "devDependencies": {
-        "@nativescript/core": "^9.0.20",
-        "typescript": "^5.0.0"
-    },
-    "contributes": {
-        "snippets": [
-            {
-                "language": "html",
-                "path": "./snippets/angular/components.json"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/angular/layouts.json"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/angular/gestures.json"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/angular/settings-icon.json"
-            },
-            {
-                "language": "xml",
-                "path": "./snippets/core/components.json"
-            },
-            {
-                "language": "xml",
-                "path": "./snippets/core/layouts.json"
-            },
-            {
-                "language": "xml",
-                "path": "./snippets/core/gestures.json"
-            },
-            {
-                "language": "xml",
-                "path": "./snippets/core/settings-icon.json"
-            },
-            {
-                "language": "vue",
-                "path": "./snippets/vue/components.json"
-            },
-            {
-                "language": "vue",
-                "path": "./snippets/vue/layouts.json"
-            },
-            {
-                "language": "vue",
-                "path": "./snippets/vue/gestures.json"
-            },
-            {
-                "language": "typescriptreact",
-                "path": "./snippets/react/components.json"
-            },
-            {
-                "language": "typescriptreact",
-                "path": "./snippets/react/layouts.json"
-            },
-            {
-                "language": "typescriptreact",
-                "path": "./snippets/react/gestures.json"
-            },
-            {
-                "language": "javascriptreact",
-                "path": "./snippets/react/components.json"
-            },
-            {
-                "language": "javascriptreact",
-                "path": "./snippets/react/layouts.json"
-            },
-            {
-                "language": "javascriptreact",
-                "path": "./snippets/react/gestures.json"
-            },
-            {
-                "language": "svelte",
-                "path": "./snippets/svelte/components.json"
-            },
-            {
-                "language": "svelte",
-                "path": "./snippets/svelte/layouts.json"
-            },
-            {
-                "language": "svelte",
-                "path": "./snippets/svelte/gestures.json"
-            },
-            {
-                "language": "svelte-start-tag",
-                "path": "./snippets/svelte/gestures.json"
-            }
-        ]
+    {
+      "url": "https://vsmarketplacebadges.dev/rating-short/ElecTreeFrying.nativescript-angular-html-snippets.png",
+      "description": "Rating badge",
+      "href": "https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets"
     }
+  ],
+  "homepage": "https://github.com/ElecTreeFrying/nativescript-snippets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElecTreeFrying/nativescript-snippets.git"
+  },
+  "bugs": {
+    "email": "octobergroup721@gmail.com",
+    "url": "https://github.com/ElecTreeFrying/nativescript-snippets/issues"
+  },
+  "qna": "https://github.com/ElecTreeFrying/nativescript-snippets/issues",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": true
+  },
+  "scripts": {
+    "generate": "node tools/extract.js && node tools/render.js && node tools/gen-docs.js && node tools/validate.js && node tools/check-coverage.js",
+    "validate": "node tools/validate.js",
+    "check": "node tools/check-coverage.js"
+  },
+  "devDependencies": {
+    "@nativescript/core": "^9.0.20",
+    "typescript": "^5.0.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/angular/components.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/angular/layouts.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/angular/gestures.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/angular/settings-icon.json"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/core/components.json"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/core/layouts.json"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/core/gestures.json"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/core/settings-icon.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/components.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/layouts.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue/gestures.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react/components.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react/layouts.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react/gestures.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react/components.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react/layouts.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react/gestures.json"
+      },
+      {
+        "language": "svelte",
+        "path": "./snippets/svelte/components.json"
+      },
+      {
+        "language": "svelte",
+        "path": "./snippets/svelte/layouts.json"
+      },
+      {
+        "language": "svelte",
+        "path": "./snippets/svelte/gestures.json"
+      },
+      {
+        "language": "svelte-start-tag",
+        "path": "./snippets/svelte/gestures.json"
+      }
+    ]
+  }
 }
