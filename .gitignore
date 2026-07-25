@@ -1,11 +1,32 @@
-*.vsix
+# Build output
+# No bundler in this repo — snippets/ are generated artifacts but ARE committed,
+# since the .vsix ships them and tools/ (the generator) is local-only.
+
+# Dependencies
 node_modules/
+
+# VS Code extension testing & packaging
+.vscode-test/
+*.vsix
+
+# Logs
+*.log
+
+# OS
 .DS_Store
-# .claude/ is local-only — not committed
+Thumbs.db
+
+# Local-only working trees — kept on disk, never committed.
+# NOTE: qa/ is deliberately TRACKED in this repo, unlike the other three — never add it here.
+tools/
+# Agent session state. Self-ignored by .remember/.gitignore too; named here so the tree stays
+# ignored even if that file is ever lost.
+.remember/
 .claude/
 
-# tools/ is local-only (the snippet generator) — not committed
-tools/
-
-# demo-video masters — converted to .gif for the README; kept local, not committed (see .vscodeignore)
+# Local media — masters and cards that never enter the tree
 images/*.mov
+images/social-preview.png
+
+# Tooling artifacts
+.playwright-mcp/
