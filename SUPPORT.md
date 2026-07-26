@@ -244,6 +244,7 @@ npm run check      # fidelity: generated snippets vs the model
 
 This extension is free. If it saves you time, consider:
 
+- **Sponsoring** via [GitHub Sponsors](https://github.com/sponsors/ElecTreeFrying)
 - **Starring** the repo on [GitHub](https://github.com/ElecTreeFrying/nativescript-snippets)
 - **Leaving a review** on the [VS Code Marketplace][marketplace]
 - **Donating** — addresses are in the [README's Support section][donate]

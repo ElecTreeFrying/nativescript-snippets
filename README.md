@@ -255,10 +255,12 @@ See [SPEC.md][SPEC] for the snippet grammar and generation pipeline — behavior
 
 **This extension is free and always will be.** If it's become part of your workflow, here are a few ways to give back:
 
+- **Sponsor** on [GitHub Sponsors][sponsors] — one-time or monthly
 - Star the repo on [GitHub][repo]
 - Leave a review on the [VS Code Marketplace][reviews]
 - Send a donation to any address below
 
+[sponsors]: https://github.com/sponsors/ElecTreeFrying
 [reviews]: https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets&ssr=false#review-details
 
 | Network | Address |
