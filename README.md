@@ -199,7 +199,7 @@ Most prefixes work in every flavor; a few are flavor-specific: `ActionBarExtensi
 
 **Requires VS Code 1.30.0 or later.**
 
-- **Marketplace:** Extensions view (<kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>) → search **NativeScript Snippets** by *ElecTreeFrying* → **Install**.
+- **Marketplace:** Extensions view (<kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>) → search **NativeScript Snippets** by *WinterNova5* → **Install**.
 - **CLI:** `code --install-extension ElecTreeFrying.nativescript-angular-html-snippets`
 - **Direct:** [VS Code Marketplace listing][package]
 - **Cursor / Windsurf / VSCodium / Gitpod:** Search **NativeScript Snippets** in the Extensions panel — served via [Open VSX][open-vsx].
@@ -272,7 +272,7 @@ See [SPEC.md][SPEC] for the snippet grammar and generation pipeline — behavior
 
 ## Related
 
-- **[All extensions by ElecTreeFrying][all]** on the VS Code Marketplace.
+- **[All extensions by WinterNova5][all]** on the VS Code Marketplace.
 
 [all]: https://marketplace.visualstudio.com/publishers/ElecTreeFrying
 
