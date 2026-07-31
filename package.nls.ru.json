@@ -1,0 +1,4 @@
+{
+  "displayName": "Сниппеты NativeScript — Angular, Core, Vue, React, Svelte",
+  "description": "Сниппеты интерфейса NativeScript для всех вариантов — Angular (HTML), Core (XML), Vue, React и Svelte. Сниппеты компонентов, макетов и жестов создаются из типов @nativescript/core, поэтому всегда остаются точными."
+}

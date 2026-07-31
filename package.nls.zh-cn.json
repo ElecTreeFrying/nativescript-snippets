@@ -1,0 +1,4 @@
+{
+  "displayName": "NativeScript 代码片段 — Angular、Core、Vue、React、Svelte",
+  "description": "适用于所有风格的 NativeScript UI 代码片段 — Angular (HTML)、Core (XML)、Vue、React 和 Svelte。组件、布局和手势代码片段均从 @nativescript/core 类型生成，因此始终保持准确。"
+}
