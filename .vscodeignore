@@ -3,8 +3,8 @@
 .vscode-test/**
 .github/**
 
-# Dependencies & build output — this extension has no runtime bundle;
-# the .vsix ships package.json + snippets/ + README/CHANGELOG/LICENSE + images/icon.png
+# Dependencies & build output — this extension has no runtime bundle; the .vsix ships
+# package.json + package.nls*.json + snippets/ + README/CHANGELOG/LICENSE + images/icon.png
 node_modules/**
 
 # Source & build tooling — snippets/ are generated artifacts, tools/ is the generator
