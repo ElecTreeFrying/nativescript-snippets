@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  snippets:
+    name: Validate shipped snippets
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # NOTE: `npm run generate` / `validate` / `check` cannot run here.
+      # All three live in tools/, which is gitignored and therefore absent from
+      # a fresh clone — CI only ever sees the shipped artifacts. So this job
+      # checks what a clone actually has: that every snippet file the manifest
+      # points at exists and parses. It deliberately does NOT re-implement
+      # tools/validate.js (content fidelity) — that stays the local gate.
+      #
+      # No `npm ci`: this check needs no dependencies, which is the point.
+      - name: Every contributed snippet file exists and is valid JSON
+        run: |
+          node -e "
+          const fs = require('fs');
+          const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+          const entries = pkg.contributes.snippets;
+          const seen = new Set();
+          let failed = 0;
+
+          for (const s of entries) {
+            if (!fs.existsSync(s.path)) {
+              console.error('MISSING  ' + s.path + '  (language: ' + s.language + ')');
+              failed++;
+              continue;
+            }
+            if (seen.has(s.path)) { continue; }
+            seen.add(s.path);
+            try {
+              JSON.parse(fs.readFileSync(s.path, 'utf8'));
+            } catch (e) {
+              console.error('BAD JSON  ' + s.path + '  — ' + e.message);
+              failed++;
+            }
+          }
+
+          console.log('contributes.snippets entries : ' + entries.length);
+          console.log('distinct files parsed OK     : ' + seen.size);
+          if (failed) {
+            console.error('FAILED: ' + failed + ' problem(s)');
+            process.exit(1);
+          }
+          console.log('All shipped snippet files resolve and parse.');
+          "
