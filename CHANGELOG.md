@@ -1,5 +1,18 @@
 # Change Log
 
+## v1.0.2 (2026-08-08)
+
+### Added
+
+- **The extension's name and description now follow VS Code's display language.** Both render in Simplified Chinese, Spanish, French, Brazilian Portuguese, Russian, German, Japanese, and Turkish, with English as the fallback for every other language. Snippet prefixes and bodies are deliberately not translated — `ns-button` is a typed identifier, not display text.
+
+### Changes
+
+- **Open VSX is now linked directly from the README** — a version badge, an **Open VSX listing** line under Installation, and a link to the publisher's other extensions on the registry. Compatibility notes that the listing is published by **WinterNova5**, a verified Open VSX publisher.
+- **The publisher reads as WinterNova5** throughout the README. Install commands, URLs, and the extension id are unchanged.
+- **GitHub Sponsors** now sits alongside the existing donation options in the README's Support section and in the support guide.
+- No snippet changes — the shipped snippets are byte-identical to v1.0.1.
+
 ## v1.0.1 (2026-07-25)
 
 ### Added
