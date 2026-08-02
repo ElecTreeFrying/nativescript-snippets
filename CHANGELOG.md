@@ -8,7 +8,7 @@
 
 ### Changes
 
-- **Open VSX is now linked directly from the README** — a version badge, an **Open VSX listing** line under Installation, and a link to the publisher's other extensions on the registry. Compatibility notes that the listing is published by **WinterNova5**, a verified Open VSX publisher.
+- **Open VSX is now linked directly from the README** — a version badge, an **Open VSX listing** line under Installation, and a link to the publisher's other extensions on the registry. Compatibility notes that the listing is published by **WinterNova5**, a verified Open VSX publisher, and now records which display languages the extension ships in.
 - **The publisher reads as WinterNova5** throughout the README. Install commands, URLs, and the extension id are unchanged.
 - **GitHub Sponsors** now sits alongside the existing donation options in the README's Support section and in the support guide.
 - No snippet changes — the shipped snippets are byte-identical to v1.0.1.

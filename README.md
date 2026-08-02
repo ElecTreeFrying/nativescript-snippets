@@ -220,6 +220,7 @@ Most prefixes work in every flavor; a few are flavor-specific: `ActionBarExtensi
 - **Registries:** Available on both the [VS Code Marketplace][package] and [Open VSX][open-vsx] — published by **WinterNova5**, a verified Open VSX publisher.
 - **Compatible hosts:** Cursor, Windsurf, VSCodium, Gitpod, Code Server, and other forks that implement the VS Code API at the same engine version — installable directly from their Extensions panel via Open VSX.
 - **Web:** Runs on [vscode.dev](https://vscode.dev) and [github.dev](https://github.dev) — it's a pure declarative extension, so there's no native code to hold it back.
+- **Display language:** The extension's name and description follow VS Code's display language — Simplified Chinese, Spanish, French, Brazilian Portuguese, Russian, German, Japanese, and Turkish, with English as the fallback. Snippet prefixes and bodies stay English: `ns-button` is a typed identifier, not display text.
 - **Languages:** Angular (`html`), Core (`xml`), and React (`typescriptreact`/`javascriptreact`) work out of the box; Vue and Svelte require the **Vue (Volar)** / **Svelte** language extensions.
 - **Footprint:** Pure declarative snippet JSON — zero runtime dependencies.
 - **Telemetry:** None. Everything runs locally.
