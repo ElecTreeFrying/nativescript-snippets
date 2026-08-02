@@ -22,7 +22,7 @@ The formal specification of the snippet system: the prefix grammar, the variant 
 
 ## 1. Overview
 
-This extension contributes VS Code snippets for NativeScript UI to five framework flavors. It has **no runtime code** — the shipped artifact is `package.json` plus the snippet JSON under `snippets/`. All snippet content and documentation is **generated** at build time from `@nativescript/core` TypeScript types by the pipeline under `tools/`; the JSON files are build artifacts, not source.
+This extension contributes VS Code snippets for NativeScript UI to five framework flavors. It has **no runtime code** — the shipped artifact is `package.json`, the `package.nls*.json` display-string files, and the snippet JSON under `snippets/`. All snippet content and documentation is **generated** at build time from `@nativescript/core` TypeScript types by the pipeline under `tools/`; the JSON files are build artifacts, not source.
 
 The system's two invariants:
 
@@ -131,7 +131,7 @@ The following are **generated** and must never be hand-edited — the next `npm 
 - **`reference.md`** — rewritten wholesale by `gen-docs.js`.
 - **README `## Snippets` section** — `gen-docs.js` replaces everything between the `## Snippets` heading and the next `## ` heading. Editors must keep that heading and a following `## ` heading; the block between is generator-owned.
 
-Everything else (the rest of `README.md`, this `SPEC.md`, `SUPPORT.md`, `CLAUDE.md`, `CHANGELOG.md`, `LICENSE.md`) is hand-maintained.
+Everything else (the rest of `README.md`, this `SPEC.md`, `SUPPORT.md`, `CLAUDE.md`, `CHANGELOG.md`, `LICENSE.md`, and the `package.nls*.json` localization files) is hand-maintained.
 
 ## 10. Validation rules
 
@@ -164,6 +164,8 @@ snippets/svelte/{components,layouts,gestures}.json                  → svelte
 Only Angular and Core ship `settings-icon.json` (iOS icons are an `ActionItem` concern most relevant to those templates). React maps each file to both `typescriptreact` and `javascriptreact`.
 
 Svelte's `gestures.json` is mapped to **two** languages — `svelte` (the markup between elements) **and** `svelte-start-tag` (the region *inside* an element's opening tag, which the Svelte grammar scopes as its own language). This is what lets gesture fragments like `on:tap={…}` expand inside a tag, not only between elements. No other flavor needs it: Vue's `<template>` exposes no separate in-tag language to target, so the Vue equivalent stays a documented limitation (`SUPPORT.md`) rather than a fix.
+
+**Manifest localization.** The manifest's `displayName` and `description` are `%key%` placeholders resolved through `package.nls.json` (the English base and per-key fallback) and eight locale files — `package.nls.{zh-cn,es,fr,pt-br,ru,de,ja,tr}.json` — so the extension's name and description render in VS Code's display language; all nine files ship in the VSIX, and the Marketplace listing shows the English base. These files are hand-maintained, outside the generation pipeline (see [§9](#9-doc-sync-contract)). Snippet prefixes and bodies are deliberately not localized: prefixes are typed identifiers (`ns-button`), not display text.
 
 ## 12. Tab-stop semantics
 

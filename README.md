@@ -4,15 +4,20 @@
 [![installs][installs-badge]][package]
 [![downloads][downloads-badge]][package]
 [![rating][rating-badge]][package]
-[![license][license-badge]][repo]
+[![open vsx][ovsx-badge]][open-vsx]
 [![vscode][vscode-badge]][package]
+[![license][license-badge]][repo]
+
+[![sponsor][sponsor-badge]][sponsors]
 
 [version-badge]: https://vsmarketplacebadges.dev/version-short/ElecTreeFrying.nativescript-angular-html-snippets.png
 [installs-badge]: https://vsmarketplacebadges.dev/installs-short/ElecTreeFrying.nativescript-angular-html-snippets.png
 [downloads-badge]: https://vsmarketplacebadges.dev/downloads-short/ElecTreeFrying.nativescript-angular-html-snippets.png
 [rating-badge]: https://vsmarketplacebadges.dev/rating-short/ElecTreeFrying.nativescript-angular-html-snippets.png
-[license-badge]: https://img.shields.io/github/license/ElecTreeFrying/nativescript-snippets
+[ovsx-badge]: https://img.shields.io/open-vsx/v/ElecTreeFrying/nativescript-angular-html-snippets
 [vscode-badge]: https://img.shields.io/badge/vscode-%3E%3D1.30.0-blue
+[license-badge]: https://img.shields.io/github/license/ElecTreeFrying/nativescript-snippets
+[sponsor-badge]: https://img.shields.io/badge/GitHub_Sponsors-ea4aaa?logo=githubsponsors&logoColor=white
 [package]: https://marketplace.visualstudio.com/items?itemName=ElecTreeFrying.nativescript-angular-html-snippets
 [repo]: https://github.com/ElecTreeFrying/nativescript-snippets
 
@@ -202,6 +207,7 @@ Most prefixes work in every flavor; a few are flavor-specific: `ActionBarExtensi
 - **Marketplace:** Extensions view (<kbd>Cmd</kbd>/<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd>) → search **NativeScript Snippets** by *WinterNova5* → **Install**.
 - **CLI:** `code --install-extension ElecTreeFrying.nativescript-angular-html-snippets`
 - **Direct:** [VS Code Marketplace listing][package]
+- **Direct (Open VSX):** [Open VSX listing][open-vsx]
 - **Cursor / Windsurf / VSCodium / Gitpod:** Search **NativeScript Snippets** in the Extensions panel — served via [Open VSX][open-vsx].
 
 [open-vsx]: https://open-vsx.org/extension/ElecTreeFrying/nativescript-angular-html-snippets
@@ -211,9 +217,10 @@ Most prefixes work in every flavor; a few are flavor-specific: `ActionBarExtensi
 ## Compatibility
 
 - **VS Code:** 1.30.0 or later.
-- **Registries:** Available on both the [VS Code Marketplace][package] and [Open VSX][open-vsx].
+- **Registries:** Available on both the [VS Code Marketplace][package] and [Open VSX][open-vsx] — published by **WinterNova5**, a verified Open VSX publisher.
 - **Compatible hosts:** Cursor, Windsurf, VSCodium, Gitpod, Code Server, and other forks that implement the VS Code API at the same engine version — installable directly from their Extensions panel via Open VSX.
 - **Web:** Runs on [vscode.dev](https://vscode.dev) and [github.dev](https://github.dev) — it's a pure declarative extension, so there's no native code to hold it back.
+- **Display language:** The extension's name and description follow VS Code's display language — Simplified Chinese, Spanish, French, Brazilian Portuguese, Russian, German, Japanese, and Turkish, with English as the fallback. Snippet prefixes and bodies stay English: `ns-button` is a typed identifier, not display text.
 - **Languages:** Angular (`html`), Core (`xml`), and React (`typescriptreact`/`javascriptreact`) work out of the box; Vue and Svelte require the **Vue (Volar)** / **Svelte** language extensions.
 - **Footprint:** Pure declarative snippet JSON — zero runtime dependencies.
 - **Telemetry:** None. Everything runs locally.
@@ -274,9 +281,10 @@ See [SPEC.md][SPEC] for the snippet grammar and generation pipeline — behavior
 
 ## Related
 
-- **[All extensions by WinterNova5][all]** on the VS Code Marketplace.
+- **[All extensions by WinterNova5][all]** on the VS Code Marketplace — and on [Open VSX][all-ovsx].
 
 [all]: https://marketplace.visualstudio.com/publishers/ElecTreeFrying
+[all-ovsx]: https://open-vsx.org/namespace/ElecTreeFrying
 
 ---
 

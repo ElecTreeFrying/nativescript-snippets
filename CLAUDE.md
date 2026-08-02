@@ -8,7 +8,7 @@ Do NOT append a `Co-Authored-By: Claude …` trailer (or any other AI attributio
 
 ## What this is
 
-A **generated, multi-flavor VS Code snippets extension** for NativeScript. It ships **no runtime/activation code** (no `extension.ts`, no `main`, no `activationEvents`) — the published artifact is `package.json` + the snippet JSON under `snippets/`. But it is **not** hand-authored: every snippet is derived from `@nativescript/core` v9 TypeScript types by a build-time generator under `tools/`. There is a build step (the generator) even though there is no runtime. The `tools/` generator is **local-only (gitignored)** — not committed or distributed, so a fresh clone has the shipped `snippets/` + docs but not the build tooling.
+A **generated, multi-flavor VS Code snippets extension** for NativeScript. It ships **no runtime/activation code** (no `extension.ts`, no `main`, no `activationEvents`) — the published artifact is `package.json` + the `package.nls*.json` display-string files + the snippet JSON under `snippets/`. But it is **not** hand-authored: every snippet is derived from `@nativescript/core` v9 TypeScript types by a build-time generator under `tools/`. There is a build step (the generator) even though there is no runtime. The `tools/` generator is **local-only (gitignored)** — not committed or distributed, so a fresh clone has the shipped `snippets/` + docs but not the build tooling.
 
 The same `ns-*` prefixes are contributed to five flavors, each scoped to its language(s) via `contributes.snippets`:
 
@@ -66,6 +66,8 @@ These are silently overwritten on the next `npm run generate`:
 - **README `## Snippets` section** — `gen-docs.js` rewrites everything between the `## Snippets` heading and the **next `## ` heading** in place. When editing the README, keep that heading and ensure a following `## ` heading exists, and treat the block between them as generator-owned.
 
 The rest of the README, plus `SPEC.md`, `SUPPORT.md`, `CLAUDE.md`, `CHANGELOG.md`, and `LICENSE.md`, are hand-maintained.
+
+**So are the `package.nls*.json` files** — the manifest's `%displayName%`/`%description%` placeholders resolve from `package.nls.json` (English base + per-key fallback) and the locale files `package.nls.{zh-cn,es,fr,pt-br,ru,de,ja,tr}.json`. They are the one shipped surface `npm run generate` does **not** own: edit them directly (all nine ship in the VSIX; the Marketplace listing shows the English base). Snippet prefixes, bodies, and `description` fields stay English — they are generated, and prefixes are typed identifiers, not display text.
 
 ## Prefix & variant grammar
 
