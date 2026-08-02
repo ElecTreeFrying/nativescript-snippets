@@ -7,6 +7,8 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+# Least privilege by default. No job here writes to the repo; a job that ever needs
+# to should raise its own `permissions:` block rather than widening this one.
 permissions:
   contents: read
 
@@ -18,6 +20,7 @@ jobs:
   snippets:
     name: Validate shipped snippets
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - uses: actions/checkout@v4
@@ -67,3 +70,85 @@ jobs:
           }
           console.log('All shipped snippet files resolve and parse.');
           "
+
+  localization:
+    name: Localization bundles
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # No `npm ci` — the gate is dependency-free on purpose, so a broken lockfile
+      # can never mask a broken translation. It decides everything from the files
+      # on disk: unresolved %key% placeholders, keys missing from a locale, keys
+      # localized in runtime-matched positions.
+      #
+      # This repo localizes only displayName + description; snippet prefixes and
+      # bodies stay English by design (they are typed identifiers, not display
+      # text), so there is deliberately nothing else for this gate to cover.
+      - name: Verify package.nls bundles
+        run: node .github/scripts/check-nls.js
+
+  package:
+    name: VSIX packages
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: [ snippets, localization ]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # The release gate CI was missing. This repo has no `vscode:prepublish`, so
+      # packaging runs no npm script and needs no install — but the manifest can
+      # still be invalid, and only this step would catch it. Pinned to the v3 line
+      # so a future major release of vsce cannot silently change what it means.
+      - name: Build the VSIX
+        run: npx --yes @vscode/vsce@^3 package --out extension.vsix
+
+      # Authoritative shipping check: inspect the archive itself rather than
+      # reasoning about .vscodeignore globs.
+      - name: Assert the VSIX contents are correct
+        run: |
+          unzip -l extension.vsix > listing.txt
+          fail=0
+
+          for loc in "" .zh-cn .es .fr .pt-br .ru .de .ja .tr; do
+            if ! grep -q "package.nls${loc}.json" listing.txt; then
+              echo "MISSING from VSIX: package.nls${loc}.json"
+              fail=1
+            fi
+          done
+
+          # The snippets ARE the product here — an empty VSIX would still package.
+          if ! grep -q "extension/snippets/" listing.txt; then
+            echo "MISSING from VSIX: snippets/ — the extension would install with nothing to contribute"
+            fail=1
+          fi
+
+          # Maintainer-only trees must never ship. tools/ is the generator and is
+          # gitignored; qa/ is tracked but VSIX-excluded.
+          for leak in "extension/tools/" "extension/qa/" "CLAUDE.md" "extension/.github/" "SPEC.md"; do
+            if grep -q "$leak" listing.txt; then
+              echo "LEAKED into VSIX: $leak"
+              fail=1
+            fi
+          done
+
+          echo "--- VSIX contents ---"
+          cat listing.txt
+          exit $fail
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vsix
+          path: extension.vsix
+          retention-days: 14
