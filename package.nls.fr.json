@@ -1,0 +1,4 @@
+{
+  "displayName": "Extraits NativeScript — Angular, Core, Vue, React, Svelte",
+  "description": "Extraits d'interface NativeScript pour toutes les variantes : Angular (HTML), Core (XML), Vue, React et Svelte. Les extraits de composants, de mises en page et de gestes sont générés à partir des types @nativescript/core, ils restent donc exacts."
+}

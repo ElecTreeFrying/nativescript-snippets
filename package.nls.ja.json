@@ -1,0 +1,4 @@
+{
+  "displayName": "NativeScript スニペット — Angular、Core、Vue、React、Svelte",
+  "description": "あらゆるフレーバーに対応した NativeScript UI スニペット — Angular (HTML)、Core (XML)、Vue、React、Svelte。コンポーネント、レイアウト、ジェスチャーのスニペットは @nativescript/core の型から生成されるため、常に正確です。"
+}

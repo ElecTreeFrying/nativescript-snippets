@@ -1,0 +1,164 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+# Least privilege by default. No job here writes to the repo; a job that ever needs
+# to should raise its own `permissions:` block rather than widening this one.
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  snippets:
+    name: Validate shipped snippets
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # NOTE: `npm run generate` / `validate` / `check` cannot run here.
+      # All three live in tools/, which is gitignored and therefore absent from
+      # a fresh clone — CI only ever sees the shipped artifacts. So this job
+      # checks what a clone actually has: that every snippet file the manifest
+      # points at exists and parses. It deliberately does NOT re-implement
+      # tools/validate.js (content fidelity) — that stays the local gate.
+      #
+      # No `npm ci`: this check needs no dependencies, which is the point.
+      - name: Every contributed snippet file exists and is valid JSON
+        run: |
+          node -e "
+          const fs = require('fs');
+          const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+          const entries = pkg.contributes.snippets;
+          const seen = new Set();
+          let failed = 0;
+
+          for (const s of entries) {
+            if (!fs.existsSync(s.path)) {
+              console.error('MISSING  ' + s.path + '  (language: ' + s.language + ')');
+              failed++;
+              continue;
+            }
+            if (seen.has(s.path)) { continue; }
+            seen.add(s.path);
+            try {
+              JSON.parse(fs.readFileSync(s.path, 'utf8'));
+            } catch (e) {
+              console.error('BAD JSON  ' + s.path + '  — ' + e.message);
+              failed++;
+            }
+          }
+
+          console.log('contributes.snippets entries : ' + entries.length);
+          console.log('distinct files parsed OK     : ' + seen.size);
+          if (failed) {
+            console.error('FAILED: ' + failed + ' problem(s)');
+            process.exit(1);
+          }
+          console.log('All shipped snippet files resolve and parse.');
+          "
+
+  localization:
+    name: Localization bundles
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # No `npm ci` — the gate is dependency-free on purpose, so a broken lockfile
+      # can never mask a broken translation. It decides everything from the files
+      # on disk: unresolved %key% placeholders, keys missing from a locale, keys
+      # localized in runtime-matched positions.
+      #
+      # This repo localizes only displayName + description; snippet prefixes and
+      # bodies stay English by design (they are typed identifiers, not display
+      # text), so there is deliberately nothing else for this gate to cover.
+      - name: Verify package.nls bundles
+        run: node .github/scripts/check-nls.js
+
+  package:
+    name: VSIX packages
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: [ snippets, localization ]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      # Needed only for the pinned vsce binary below — this repo has no
+      # `vscode:prepublish`, so packaging itself still runs no npm script.
+      - name: Install dependencies
+        run: npm ci
+
+      # The release gate CI was missing. The manifest can be invalid while every
+      # other job here passes, and only this step would catch it.
+      #
+      # Invoked by explicit path, NOT `npx vsce` or `npm exec -- vsce`. Both of those
+      # fall back to the registry when the binary is absent, and the unscoped `vsce`
+      # package there is DEPRECATED and frozen at 2.15.0 — an error that reads like a
+      # manifest bug and is not one. This path resolves only to the `@vscode/vsce`
+      # version in package-lock.json, so CI and a local publish run use the same tool.
+      - name: Build the VSIX
+        run: ./node_modules/.bin/vsce package --out extension.vsix
+
+      # Authoritative shipping check: inspect the archive itself rather than
+      # reasoning about .vscodeignore globs.
+      - name: Assert the VSIX contents are correct
+        run: |
+          unzip -l extension.vsix > listing.txt
+          fail=0
+
+          for loc in "" .zh-cn .es .fr .pt-br .ru .de .ja .tr; do
+            if ! grep -q "package.nls${loc}.json" listing.txt; then
+              echo "MISSING from VSIX: package.nls${loc}.json"
+              fail=1
+            fi
+          done
+
+          # The snippets ARE the product here — an empty VSIX would still package.
+          if ! grep -q "extension/snippets/" listing.txt; then
+            echo "MISSING from VSIX: snippets/ — the extension would install with nothing to contribute"
+            fail=1
+          fi
+
+          # Maintainer-only trees must never ship. tools/ is the generator and is
+          # gitignored; qa/ is tracked but VSIX-excluded.
+          for leak in "extension/tools/" "extension/qa/" "CLAUDE.md" "extension/.github/" "SPEC.md"; do
+            if grep -q "$leak" listing.txt; then
+              echo "LEAKED into VSIX: $leak"
+              fail=1
+            fi
+          done
+
+          echo "--- VSIX contents ---"
+          cat listing.txt
+          exit $fail
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vsix
+          path: extension.vsix
+          retention-days: 14

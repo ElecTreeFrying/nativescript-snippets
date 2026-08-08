@@ -3,8 +3,8 @@
 .vscode-test/**
 .github/**
 
-# Dependencies & build output — this extension has no runtime bundle;
-# the .vsix ships package.json + snippets/ + README/CHANGELOG/LICENSE + images/icon.png
+# Dependencies & build output — this extension has no runtime bundle; the .vsix ships
+# package.json + package.nls*.json + snippets/ + README/CHANGELOG/LICENSE + images/icon.png
 node_modules/**
 
 # Source & build tooling — snippets/ are generated artifacts, tools/ is the generator
@@ -31,7 +31,6 @@ snippets/**/README.md
 # Self-ignored from git, so they never appear in `git status` — but vsce packages
 # from disk, not from git, and would otherwise ship them. Must stay named here.
 .claude/**
-.remember/**
 
 # Demo media — the README loads these from GitHub, so the package stays lean.
 # .mov are the convert-to-gif masters. images/icon.png is the Marketplace icon

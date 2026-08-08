@@ -1,0 +1,33 @@
+version: 2
+
+updates:
+  # This extension ships no runtime dependency — the published artifact is
+  # package.json + snippets/. Everything in package.json is dev tooling for the
+  # local generator, @nativescript/core chief among it: a bump there is the
+  # upstream signal that the shipped snippets may be stale and want a
+  # regenerate + re-verify pass locally.
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: chore
+      include: scope
+    # Wait a week before proposing a freshly published version. Malicious or
+    # broken npm releases are typically caught and yanked inside that window.
+    cooldown:
+      default-days: 7
+
+  # The actions pinned in .github/workflows/
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: chore
+    cooldown:
+      default-days: 7

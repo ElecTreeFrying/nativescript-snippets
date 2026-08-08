@@ -1,0 +1,4 @@
+{
+  "displayName": "Fragmentos de NativeScript: Angular, Core, Vue, React, Svelte",
+  "description": "Fragmentos de interfaz de NativeScript para todas las variantes: Angular (HTML), Core (XML), Vue, React y Svelte. Los fragmentos de componentes, diseños y gestos se generan a partir de los tipos de @nativescript/core, por lo que siempre son precisos."
+}
